@@ -6,7 +6,29 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="Green">
-        <Button Name="button" Click="showName" Background="Yellow" Height="30" Width="50" Margin="20" BorderThickness="2" BorderBrush="Red">Name</Button>
+    <Window.Resources>
+        <SolidColorBrush x:Key="myColor" Color="Green" />
+        <SolidColorBrush x:Key="myTextColor" Color="blue"></SolidColorBrush>
+    </Window.Resources>
+    <Grid Background="{StaticResource myColor}">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.Row="1" Grid.Column="1" Width="100" Height="20" x:Name="myName"></TextBox>
+        <Button Grid.Column="1" Grid.Row="2" BorderBrush="Red" BorderThickness="3px" Click="showName">
+            <Button.Content>Click me</Button.Content>
+            <Button.Background>yellow</Button.Background>
+            <Button.Height>30</Button.Height>
+            <Button.Width>70</Button.Width>
+        </Button>
+
+        <TextBlock x:Name="result" FontSize="40" FontWeight="Bold" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource myTextColor}"></TextBlock>
     </Grid>
 </Window>

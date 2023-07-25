@@ -23,9 +23,8 @@ namespace WpfApp1
         }
         void showName(object sender, RoutedEventArgs e)
         {
-            
-            MessageBox.Show($"Hello, Saman");
+            string name = myName.Text;
+            result.Text = $"Hello, {name}";
         }
-
     }
 }
