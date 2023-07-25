@@ -9,6 +9,10 @@
     <Window.Resources>
         <SolidColorBrush x:Key="myColor" Color="Green" />
         <SolidColorBrush x:Key="myTextColor" Color="blue"></SolidColorBrush>
+        <Style x:Key="textStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="40"/>
+            <Setter Property="Foreground" Value="{StaticResource myTextColor}"/>
+        </Style>
     </Window.Resources>
     <Grid Background="{StaticResource myColor}">
         <Grid.RowDefinitions>
@@ -29,6 +33,6 @@
             <Button.Width>70</Button.Width>
         </Button>
 
-        <TextBlock x:Name="result" FontSize="40" FontWeight="Bold" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource myTextColor}"></TextBlock>
+        <TextBlock x:Name="result" FontWeight="Bold" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource textStyle}"></TextBlock>
     </Grid>
 </Window>
