@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Window.Resources>
-        <SolidColorBrush x:Key="myColor" Color="Green" />
+        <SolidColorBrush x:Key="myColor" Color = "{StaticResource appColor}" />
         <SolidColorBrush x:Key="myTextColor" Color="blue"></SolidColorBrush>
+        <Color x:Key="textcolor">purple</Color>
         <Style x:Key="textStyle" TargetType="TextBlock">
             <Setter Property="FontSize" Value="40"/>
             <Setter Property="Foreground" Value="{StaticResource myTextColor}"/>
@@ -25,8 +26,10 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <!--Grid.Row is attached property-->
         <TextBox Grid.Row="1" Grid.Column="1" Width="100" Height="20" x:Name="myName"></TextBox>
         <Button Grid.Column="1" Grid.Row="2" BorderBrush="Red" BorderThickness="3px" Click="showName">
+            <!--Property element-->
             <Button.Content>Click me</Button.Content>
             <Button.Background>yellow</Button.Background>
             <Button.Height>30</Button.Height>
