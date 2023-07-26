@@ -26,5 +26,10 @@ namespace WpfApp1
             string name = myName.Text;
             result.Text = $"Hello, {name}";
         }
+        void stackPanel(object sender, RoutedEventArgs e)
+        {
+            WindowStackPanel windowStackPanel = new WindowStackPanel();
+            windowStackPanel.Show();
+        }
     }
 }
