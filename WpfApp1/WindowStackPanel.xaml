@@ -13,41 +13,68 @@
         <SolidColorBrush x:Key="bgColor" Color="GhostWhite" />
         <SolidColorBrush x:Key="buttonColor" Color="Red" />
     </Window.Resources>
-    <StackPanel Background="{StaticResource bgColor}" Orientation="Horizontal">
-        <Rectangle
+    <StackPanel Background="{StaticResource bgColor}" Orientation="Vertical">
+        <TextBlock
+            HorizontalAlignment="Center"
+            FontFamily="Comic Sans MS"
+            FontSize="50"
+            FontWeight="ExtraBold"
+            Foreground="DarkOliveGreen">
+            LOKI
+        </TextBlock>
+        <Button
+            Width="250"
+            Height="90"
+            HorizontalAlignment="Center"
+            Background="{StaticResource buttonColor}"
+            Click="SayMyName"
+            FontSize="60"
+            FontWeight="Bold"
+            Foreground="White">
+            MARVEL
+        </Button>
+        <TextBlock
+            x:Name="saymyName"
+            HorizontalAlignment="Center"
+            FontFamily="Comic Sans MS"
+            FontSize="60"
+            Foreground="DarkOliveGreen" />
+        <StackPanel Orientation="Horizontal">
+            <Rectangle
                 Margin="10"
                 Width="100"
                 Height="100"
                 Fill="Green" />
-        <Rectangle
+            <Rectangle
                 Margin="10"
                 Width="100"
                 Height="100"
                 Fill="Pink" />
-        <Rectangle
+            <Rectangle
                 Margin="10"
                 Width="100"
                 Height="100"
                 Fill="Blue" />
-        <Rectangle
+            <Rectangle
                 Margin="10"
                 Width="100"
                 Height="100"
                 Fill="Gray" />
-        <Rectangle
+            <Rectangle
                 Margin="10"
                 Width="100"
                 Height="100"
                 Fill="Red" />
-        <Rectangle
+            <Rectangle
                 Margin="10"
                 Width="100"
                 Height="100"
                 Fill="Purple" />
-        <Rectangle
+            <Rectangle
                 Margin="10"
                 Width="100"
                 Height="100"
                 Fill="Aquamarine" />
+        </StackPanel>
     </StackPanel>
 </Window>

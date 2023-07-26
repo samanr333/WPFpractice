@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\WpfApp1\App.xaml
-4742572377
+51699885780
 
-6-1347089838
+7-1458607342
 198-651932399
-MainWindow.xaml;WindowCanvas.xaml;WindowDockPanel.xaml;WindowStackPanel.xaml;
+MainWindow.xaml;WindowCanvas.xaml;WindowDockPanel.xaml;WindowStackPanel.xaml;WindowWrapPanel.xaml;
 
-True
+False
 

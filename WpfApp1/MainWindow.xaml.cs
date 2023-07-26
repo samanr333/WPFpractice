@@ -41,5 +41,10 @@ namespace WpfApp1
             WindowDockPanel windowDockPanel = new WindowDockPanel();
             windowDockPanel.Show();
         }
+        void WrapPanel(object sender, RoutedEventArgs e)
+        {
+            WindowWrapPanel windowWrapPanel = new WindowWrapPanel();
+            windowWrapPanel.Show();
+        }
     }
 }
