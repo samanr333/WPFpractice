@@ -36,5 +36,10 @@ namespace WpfApp1
             WindowCanvas windowCanvas = new WindowCanvas();
             windowCanvas.Show();
         }
+        void DockPanel(object sender, RoutedEventArgs e)
+        {
+            WindowDockPanel windowDockPanel = new WindowDockPanel();
+            windowDockPanel.Show();
+        }
     }
 }

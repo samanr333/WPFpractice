@@ -13,7 +13,7 @@
         <!--  For the top and bottom border line  -->
         <Style x:Key="TopBorderStyle" TargetType="Border">
             <Setter Property="BorderBrush" Value="white" />
-            <Setter Property="BorderThickness" Value="0,2,0,2" />
+            <Setter Property="BorderThickness" Value="0,3,0,3" />
         </Style>
     </Window.Resources>
     <Canvas Background="Black">

@@ -66,10 +66,10 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Background="Olive"
+            Click="stackPanel"
             Content="Stact Panel"
             FontWeight="Bold"
-            Foreground="White" 
-            Click="stackPanel"/>
+            Foreground="White" />
         <Button
             Grid.Row="0"
             Grid.Column="1"
@@ -78,9 +78,21 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Background="IndianRed"
+            Click="Canvas"
             Content="Canvas"
             FontWeight="Bold"
-            Foreground="White" 
-            Click="Canvas"/>
+            Foreground="White" />
+        <Button
+            Grid.Row="0"
+            Grid.Column="2"
+            Width="100"
+            Height="100"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="Purple"
+            Click="DockPanel"
+            Content="DockPanel"
+            FontWeight="Bold"
+            Foreground="White" />
     </Grid>
 </Window>
