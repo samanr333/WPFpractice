@@ -1,0 +1,91 @@
+﻿<Window
+    x:Class="WpfApp1.WindowAvengers"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfApp1"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="WindowAvengers"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Window.Resources>
+        <!--  For the top and bottom border line  -->
+        <Style x:Key="TopBorderStyle" TargetType="Border">
+            <Setter Property="BorderBrush" Value="white" />
+            <Setter Property="BorderThickness" Value="0,3,0,3" />
+        </Style>
+    </Window.Resources>
+    <Canvas Background="Black">
+        <Border
+            Width="350"
+            Margin="20"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Background="Red">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="80"
+                FontWeight="Bold"
+                Foreground="White"
+                Text="MARVEL"
+                TextAlignment="Center" />
+        </Border>
+        <Border
+            Canvas.Left="360"
+            Width="350"
+            Margin="20"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            Style="{StaticResource TopBorderStyle}">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="80"
+                FontWeight="SemiBold"
+                Foreground="White"
+                Text="STUDIOS"
+                TextAlignment="Center" />
+        </Border>
+        <Border Canvas.Left="200" Canvas.Top="180">
+            <TextBlock
+                x:Name="displayName"
+                VerticalAlignment="Top"
+                FontFamily="TIMES NEW ROMAN"
+                FontSize="30"
+                FontWeight="Bold"
+                Foreground="Goldenrod" />
+        </Border>
+        <TextBlock
+            Canvas.Left="260"
+            Canvas.Top="230"
+            VerticalAlignment="Top"
+            FontSize="30"
+            FontWeight="Bold"
+            Foreground="Snow"
+            Text="I LOVE YOU 3000❤️" />
+        <Label
+            Canvas.Left="300"
+            Canvas.Top="270"
+            Content="Enter Your Name:"
+            FontSize="20"
+            FontStyle="Italic"
+            FontWeight="Medium"
+            Foreground="DarkGoldenrod" />
+        <TextBox
+            x:Name="yourName"
+            Canvas.Left="330"
+            Canvas.Top="310"
+            Width="90"
+            Height="20" />
+        <Button
+            Canvas.Left="330"
+            Canvas.Top="350"
+            Background="DarkBlue"
+            Click="AvengerName"
+            Content="Avengers Assemble"
+            FontFamily="Times New Roman"
+            Foreground="GhostWhite" />
+    </Canvas>
+</Window>

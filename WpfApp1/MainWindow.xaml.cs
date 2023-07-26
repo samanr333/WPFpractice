@@ -46,5 +46,10 @@ namespace WpfApp1
             WindowWrapPanel windowWrapPanel = new WindowWrapPanel();
             windowWrapPanel.Show();
         }
+        void Avengers(object sender, RoutedEventArgs e)
+        {
+            WindowAvengers windowAvengers = new WindowAvengers();
+            windowAvengers.Show();
+        }
     }
 }
