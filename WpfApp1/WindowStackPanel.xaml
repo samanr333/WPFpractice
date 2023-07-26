@@ -13,34 +13,41 @@
         <SolidColorBrush x:Key="bgColor" Color="GhostWhite" />
         <SolidColorBrush x:Key="buttonColor" Color="Red" />
     </Window.Resources>
-    <StackPanel Background="{StaticResource bgColor}">
-        <TextBlock
-            HorizontalAlignment="Center"
-            VerticalAlignment="Bottom"
-            FontFamily="Comic Sans MS"
-            FontSize="50"
-            FontWeight="ExtraBold"
-            Foreground="DarkOliveGreen">
-            LOKI
-        </TextBlock>
-        <Button
-            Width="250"
-            Height="90"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            Background="{StaticResource buttonColor}"
-            Click="SayMyName"
-            FontSize="60"
-            FontWeight="Bold"
-            Foreground="White">
-            MARVEL
-        </Button>
-        <TextBlock
-            HorizontalAlignment="Center"
-            x:Name="saymyName"
-            FontSize="60"
-            FontFamily="Comic Sans MS"
-            Foreground="DarkOliveGreen" />
-
+    <StackPanel Background="{StaticResource bgColor}" Orientation="Horizontal">
+        <Rectangle
+                Margin="10"
+                Width="100"
+                Height="100"
+                Fill="Green" />
+        <Rectangle
+                Margin="10"
+                Width="100"
+                Height="100"
+                Fill="Pink" />
+        <Rectangle
+                Margin="10"
+                Width="100"
+                Height="100"
+                Fill="Blue" />
+        <Rectangle
+                Margin="10"
+                Width="100"
+                Height="100"
+                Fill="Gray" />
+        <Rectangle
+                Margin="10"
+                Width="100"
+                Height="100"
+                Fill="Red" />
+        <Rectangle
+                Margin="10"
+                Width="100"
+                Height="100"
+                Fill="Purple" />
+        <Rectangle
+                Margin="10"
+                Width="100"
+                Height="100"
+                Fill="Aquamarine" />
     </StackPanel>
 </Window>
