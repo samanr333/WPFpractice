@@ -1,0 +1,69 @@
+﻿<Window
+    x:Class="WpfApp1.WindowCanvas"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfApp1"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="WindowCanvas"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Window.Resources>
+        <!--  For the top and bottom border line  -->
+        <Style x:Key="TopBorderStyle" TargetType="Border">
+            <Setter Property="BorderBrush" Value="white" />
+            <Setter Property="BorderThickness" Value="0,2,0,2" />
+        </Style>
+    </Window.Resources>
+    <Canvas Background="Black">
+        <Border
+            Width="350"
+            Margin="20"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Background="Red">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="80"
+                FontWeight="Bold"
+                Foreground="White"
+                Text="MARVEL"
+                TextAlignment="Center" />
+        </Border>
+        <Border
+            Canvas.Left="360"
+            Width="350"
+            Margin="20"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            Style="{StaticResource TopBorderStyle}">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="80"
+                FontWeight="SemiBold"
+                Foreground="White"
+                Text="STUDIOS"
+                TextAlignment="Center" />
+        </Border>
+        <TextBlock
+            Canvas.Left="138"
+            Canvas.Top="126"
+            VerticalAlignment="Top"
+            FontFamily="TIMES NEW ROMAN"
+            FontSize="100"
+            FontWeight="Bold"
+            Foreground="Goldenrod"
+            Text="IRON MAN" />
+        <TextBlock
+            Canvas.Top="230"
+            Canvas.Left="260"
+            VerticalAlignment="Top"
+            FontSize="30"
+            FontWeight="Bold"
+            Foreground="Snow"
+            Text="I LOVE YOU 3000❤️" />
+    </Canvas>
+</Window>

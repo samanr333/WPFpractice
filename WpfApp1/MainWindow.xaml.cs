@@ -31,5 +31,10 @@ namespace WpfApp1
             WindowStackPanel windowStackPanel = new WindowStackPanel();
             windowStackPanel.Show();
         }
+        void Canvas(object sender, RoutedEventArgs e)
+        {
+            WindowCanvas windowCanvas = new WindowCanvas();
+            windowCanvas.Show();
+        }
     }
 }
