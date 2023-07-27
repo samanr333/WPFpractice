@@ -51,5 +51,10 @@ namespace WpfApp1
             WindowAvengers windowAvengers = new WindowAvengers();
             windowAvengers.Show();
         }
+        void Login(object sender, RoutedEventArgs e)
+        {
+            WindowLogin windowLogin = new WindowLogin();
+            windowLogin.Show();
+        }
     }
 }

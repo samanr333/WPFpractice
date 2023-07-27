@@ -119,5 +119,18 @@
             FontWeight="Bold"
             FontFamily="Times New Roman"
             Foreground="White" />
+        <Button
+            Grid.Row="2"
+            Grid.Column="0"
+            Width="100"
+            Height="100"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="SaddleBrown"
+            Click="Login"
+            Content="Login"
+            FontWeight="Bold"
+            FontFamily="Times New Roman"
+            Foreground="White" />
     </Grid>
 </Window>
