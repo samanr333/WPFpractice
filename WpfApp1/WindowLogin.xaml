@@ -27,6 +27,7 @@
             <Setter Property="Width" Value="100" />
             <Setter Property="HorizontalAlignment" Value="Center" />
             <Setter Property="Opacity" Value="0.7" />
+            <Setter Property="FontSize" Value="8" />
         </Style>
         <!--  Styles for Combo box  -->
         <Style x:Key="ComboBoxStyle" TargetType="ComboBox">
@@ -50,6 +51,11 @@
             <Setter Property="Foreground" Value="White" />
             <Setter Property="Margin" Value="20,0,0,0" />
         </Style>
+        <!--  Styles for List Box  -->
+        <Style x:Key="ListBoxStyle" TargetType="ListBox">
+            <Setter Property="Opacity" Value="0.5" />
+            <Setter Property="Background" Value="CadetBlue" />
+        </Style>
     </Window.Resources>
     <Canvas>
         <Image
@@ -57,18 +63,18 @@
             HorizontalAlignment="Left"
             Source="C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\login.jpg" />
         <Canvas
+            Canvas.Left="250"
             Canvas.Top="10"
             Width="200"
             Height="290"
             Margin="50"
             Background="Black"
-            Left="250"
             Opacity="0.5" />
         <Grid
             Canvas.Left="250"
             Canvas.Top="10"
             Width="200"
-            Height="260"
+            Height="270"
             Margin="50">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
@@ -85,8 +91,10 @@
                 <RowDefinition />
                 <RowDefinition />
                 <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
             <TextBlock
+                Grid.Row="0"
                 HorizontalAlignment="Center"
                 FontFamily="Times New Roman"
                 FontSize="25"
@@ -161,22 +169,38 @@
                 Style="{StaticResource LabelStyle}" />
 
             <CheckBox
+                x:Name="formula1"
                 Grid.Row="10"
                 HorizontalAlignment="Left"
                 Content="Formula1"
                 Style="{StaticResource CheckBoxStyle}" />
             <CheckBox
+                x:Name="cricket"
                 Grid.Row="10"
                 HorizontalAlignment="Center"
                 Content="Cricket"
                 Style="{StaticResource CheckBoxStyle}" />
             <CheckBox
+                x:Name="football"
                 Grid.Row="10"
                 HorizontalAlignment="Right"
-                Content="Other"
+                Content="Football"
                 Style="{StaticResource CheckBoxStyle}" />
-
-
+            <Border Grid.Row="11">
+                <!--  For submit button  -->
+                <Button
+                    Width="60"
+                    Height="20"
+                    Background="DarkGoldenrod"
+                    Click="submitDetails"
+                    Content="Submit"
+                    FontFamily="Times New Roman                 "
+                    FontWeight="Bold"
+                    Foreground="White" />
+            </Border>
         </Grid>
+        <Border Canvas.Left="550" Canvas.Top="60">
+            <ListBox x:Name="myList" Style="{StaticResource ListBoxStyle}" />
+        </Border>
     </Canvas>
 </Window>
