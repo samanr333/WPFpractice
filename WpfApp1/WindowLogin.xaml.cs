@@ -29,7 +29,7 @@ namespace WpfApp1
             string useremail = email.Text;
             string usercountry = country.Text;
             register.Text = "Registration Successful.";
-            //For gender
+            //For gender from radio button
             string gender = "None";
             if (male.IsChecked == true)
                 gender = "Male";
@@ -37,7 +37,7 @@ namespace WpfApp1
                 gender = "Female";
             else if (other.IsChecked == true)
                 gender = "Other";
-            // For Hobbies
+            // For Hobbies from check box
             string? hobby1 = null;
             string? hobby2 = null;
             string? hobby3 = null;

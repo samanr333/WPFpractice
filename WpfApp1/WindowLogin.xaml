@@ -233,13 +233,16 @@
             Canvas.Top="60"
             Width="150"
             Height="60"
-            Opacity="0.7">
+            Opacity="0.4">
             <RichTextBox x:Name="RichText">
-                <FlowDocument>
+                <FlowDocument Background="c">
                     <Paragraph>
-                        Roses are red,<LineBreak />
-                        Violets are blue,<LineBreak />
-                        Unexpected ';'<Bold>on Line 32</Bold>
+                        Roses are red,
+                        <LineBreak />
+                        Violets are blue,
+                        <LineBreak />
+                        Unexpected ';'
+                        <Bold>on Line 32</Bold>
                     </Paragraph>
                 </FlowDocument>
             </RichTextBox>
