@@ -33,7 +33,14 @@
             <Setter Property="Height" Value="18" />
             <Setter Property="Width" Value="70" />
             <Setter Property="FontSize" Value="8" />
-
+        </Style>
+        <!--  Styles for Radio button  -->
+        <Style x:Key="RadioStyle" TargetType="RadioButton">
+            <Setter Property="Height" Value="18" />
+            <Setter Property="Width" Value="70" />
+            <Setter Property="FontSize" Value="8" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Margin" Value="20,0,0,0" />
         </Style>
     </Window.Resources>
     <Canvas>
@@ -80,25 +87,31 @@
                 Text="Register" />
             <!--  For name  -->
             <Label
-                x:Name="name"
                 Grid.Row="1"
                 Content="Name"
                 Style="{StaticResource LabelStyle}" />
-            <TextBox Grid.Row="2" Style="{StaticResource TextBoxStyle}" />
+            <TextBox
+                x:Name="name"
+                Grid.Row="2"
+                Style="{StaticResource TextBoxStyle}" />
             <!--  For Email  -->
             <Label
-                x:Name="email"
                 Grid.Row="3"
                 Content="Email"
                 Style="{StaticResource LabelStyle}" />
-            <TextBox Grid.Row="4" Style="{StaticResource TextBoxStyle}" />
+            <TextBox
+                x:Name="email"
+                Grid.Row="4"
+                Style="{StaticResource TextBoxStyle}" />
             <!--  For Country  -->
             <Label
-                x:Name="country"
                 Grid.Row="5"
                 Content="Country"
                 Style="{StaticResource LabelStyle}" />
-            <ComboBox Grid.Row="6" Style="{StaticResource ComboBoxStyle}">
+            <ComboBox
+                x:Name="country"
+                Grid.Row="6"
+                Style="{StaticResource ComboBoxStyle}">
                 <ComboBoxItem Content="Nepal" />
                 <ComboBoxItem Content="USA" />
                 <ComboBoxItem Content="Canada" />
@@ -107,6 +120,32 @@
                 <ComboBoxItem Content="Japan" />
                 <ComboBoxItem Content="Norway" />
             </ComboBox>
+            <!--  For Gender  -->
+            <Label
+                Grid.Row="7"
+                Content="Gender"
+                Style="{StaticResource LabelStyle}" />
+            <RadioButton
+                x:Name="male"
+                Grid.Row="8"
+                HorizontalAlignment="Left"
+                Content="Male"
+                GroupName="Gender"
+                Style="{StaticResource RadioStyle}" />
+            <RadioButton
+                x:Name="female"
+                Grid.Row="8"
+                HorizontalAlignment="Center"
+                Content="Female"
+                GroupName="Gender"
+                Style="{StaticResource RadioStyle}" />
+            <RadioButton
+                x:Name="other"
+                Grid.Row="8"
+                HorizontalAlignment="Right"
+                Content="Other"
+                GroupName="Gender"
+                Style="{StaticResource RadioStyle}" />
         </Grid>
     </Canvas>
 </Window>
