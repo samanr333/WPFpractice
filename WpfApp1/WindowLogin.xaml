@@ -62,17 +62,17 @@
             Height="460"
             HorizontalAlignment="Left"
             Source="C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\login.jpg" />
-        <Menu Opacity="0.5" Background="CadetBlue">
+        <Menu Background="CadetBlue" Opacity="0.5">
             <MenuItem Header="File">
-                <MenuItem Header="New"/>
+                <MenuItem Header="New" />
                 <MenuItem Header="Open" />
                 <Separator />
-                <MenuItem Header="Exit"/>
+                <MenuItem Header="Exit" />
             </MenuItem>
             <MenuItem Header="Edit">
-                <MenuItem Header="Cut"/>
-                <MenuItem Header="Copy"/>
-                <MenuItem Header="Paste"/>
+                <MenuItem Header="Cut" />
+                <MenuItem Header="Copy" />
+                <MenuItem Header="Paste" />
             </MenuItem>
             <MenuItem Header="Help">
                 <MenuItem Header="About" />
@@ -215,7 +215,7 @@
                     Foreground="White" />
             </Border>
         </Grid>
-        <!--For ListBox-->
+        <!--  For ListBox  -->
         <TextBlock
             x:Name="register"
             Canvas.Left="550"
@@ -227,9 +227,22 @@
         <Border Canvas.Left="550" Canvas.Top="90">
             <ListBox x:Name="myList" Style="{StaticResource ListBoxStyle}" />
         </Border>
-        <!--For Rich TextBox-->
-        <Border Canvas.Left="50" Canvas.Top="60">
-            <RichTextBox x:Name="RichText"></RichTextBox>
+        <!--  For Rich TextBox  -->
+        <Border
+            Canvas.Left="50"
+            Canvas.Top="60"
+            Width="150"
+            Height="60"
+            Opacity="0.7">
+            <RichTextBox x:Name="RichText">
+                <FlowDocument>
+                    <Paragraph>
+                        Roses are red,<LineBreak />
+                        Violets are blue,<LineBreak />
+                        Unexpected ';'<Bold>on Line 32</Bold>
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
         </Border>
     </Canvas>
 </Window>
