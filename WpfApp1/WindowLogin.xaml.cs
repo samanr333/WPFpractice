@@ -28,6 +28,7 @@ namespace WpfApp1
             string username = name.Text;
             string useremail = email.Text;
             string usercountry = country.Text;
+            register.Text = "Registration Successful.";
             //For gender
             string gender = "None";
             if (male.IsChecked == true)

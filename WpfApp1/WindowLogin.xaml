@@ -62,6 +62,22 @@
             Height="460"
             HorizontalAlignment="Left"
             Source="C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\login.jpg" />
+        <Menu Opacity="0.5" Background="CadetBlue">
+            <MenuItem Header="File">
+                <MenuItem Header="New"/>
+                <MenuItem Header="Open" />
+                <Separator />
+                <MenuItem Header="Exit"/>
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Cut"/>
+                <MenuItem Header="Copy"/>
+                <MenuItem Header="Paste"/>
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem Header="About" />
+            </MenuItem>
+        </Menu>
         <Canvas
             Canvas.Left="250"
             Canvas.Top="10"
@@ -97,9 +113,9 @@
                 Grid.Row="0"
                 HorizontalAlignment="Center"
                 FontFamily="Times New Roman"
-                FontSize="25"
+                FontSize="16"
                 FontWeight="Bold"
-                Foreground="IndianRed"
+                Foreground="DarkGoldenrod"
                 Text="Register" />
             <!--  For name  -->
             <Label
@@ -199,8 +215,21 @@
                     Foreground="White" />
             </Border>
         </Grid>
-        <Border Canvas.Left="550" Canvas.Top="60">
+        <!--For ListBox-->
+        <TextBlock
+            x:Name="register"
+            Canvas.Left="550"
+            Canvas.Top="60"
+            FontFamily="Times New Roman"
+            FontSize="16"
+            FontWeight="Bold"
+            Foreground="DarkGoldenrod" />
+        <Border Canvas.Left="550" Canvas.Top="90">
             <ListBox x:Name="myList" Style="{StaticResource ListBoxStyle}" />
+        </Border>
+        <!--For Rich TextBox-->
+        <Border Canvas.Left="50" Canvas.Top="60">
+            <RichTextBox x:Name="RichText"></RichTextBox>
         </Border>
     </Canvas>
 </Window>
