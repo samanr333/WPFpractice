@@ -42,6 +42,14 @@
             <Setter Property="Foreground" Value="White" />
             <Setter Property="Margin" Value="20,0,0,0" />
         </Style>
+        <!--  Styles for Check box  -->
+        <Style x:Key="CheckBoxStyle" TargetType="CheckBox">
+            <Setter Property="Height" Value="18" />
+            <Setter Property="Width" Value="70" />
+            <Setter Property="FontSize" Value="8" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Margin" Value="20,0,0,0" />
+        </Style>
     </Window.Resources>
     <Canvas>
         <Image
@@ -49,16 +57,16 @@
             HorizontalAlignment="Left"
             Source="C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\login.jpg" />
         <Canvas
-            Canvas.Top="40"
+            Canvas.Top="10"
             Width="200"
-            Height="260"
+            Height="290"
             Margin="50"
             Background="Black"
             Left="250"
             Opacity="0.5" />
         <Grid
             Canvas.Left="250"
-            Canvas.Top="40"
+            Canvas.Top="10"
             Width="200"
             Height="260"
             Margin="50">
@@ -146,6 +154,29 @@
                 Content="Other"
                 GroupName="Gender"
                 Style="{StaticResource RadioStyle}" />
+            <!--  For Hobbies  -->
+            <Label
+                Grid.Row="9"
+                Content="Hobbies"
+                Style="{StaticResource LabelStyle}" />
+
+            <CheckBox
+                Grid.Row="10"
+                HorizontalAlignment="Left"
+                Content="Formula1"
+                Style="{StaticResource CheckBoxStyle}" />
+            <CheckBox
+                Grid.Row="10"
+                HorizontalAlignment="Center"
+                Content="Cricket"
+                Style="{StaticResource CheckBoxStyle}" />
+            <CheckBox
+                Grid.Row="10"
+                HorizontalAlignment="Right"
+                Content="Other"
+                Style="{StaticResource CheckBoxStyle}" />
+
+
         </Grid>
     </Canvas>
 </Window>
