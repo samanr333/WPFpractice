@@ -64,7 +64,6 @@ namespace WpfApp1
             int selectedIndex = MyList.SelectedIndex;
             string updatedText = ListEntry.Text;
             Entries[selectedIndex] = updatedText;
-            }
         }
 
     }

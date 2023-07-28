@@ -1,0 +1,142 @@
+﻿<Window
+    x:Class="WpfApp1.WindowGridView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfApp1"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="WindowGridView"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Window.Resources>
+        <Style x:Key="LabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontFamily" Value="Times New Roman" />
+            <Setter Property="FontWeight" Value="DemiBold" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="TextBoxStyle" TargetType="TextBox">
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="FontFamily" Value="Times New Roman" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Width" Value="150" />
+            <Setter Property="Height" Value="20" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+        </Style>
+        <Style x:Key="DatePickerStyle" TargetType="DatePicker">
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="FontFamily" Value="Times New Roman" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Width" Value="150" />
+            <Setter Property="Height" Value="20" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+        </Style>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="Grid.Row" Value="1" />
+            <Setter Property="Grid.Column" Value="1" />
+            <Setter Property="Width" Value="50" />
+            <Setter Property="Height" Value="20" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+        </Style>
+    </Window.Resources>
+    <Grid Background="RosyBrown">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Content="Name: "
+                Style="{StaticResource LabelStyle}" />
+            <TextBox
+                x:Name="NameEntry"
+                Grid.Row="0"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Style="{StaticResource TextBoxStyle}" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                Content="Address: "
+                Style="{StaticResource LabelStyle}" />
+            <TextBox
+                x:Name="AddressEntry"
+                Grid.Row="1"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Style="{StaticResource TextBoxStyle}" />
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                Content="Age: "
+                Style="{StaticResource LabelStyle}" />
+            <DatePicker
+                x:Name="DobEntry"
+                Grid.Row="2"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Style="{StaticResource DatePickerStyle}" />
+        </Grid>
+        <Button
+            Margin="0,0,200,0"
+            Click="AddList"
+            Content="Add"
+            Style="{StaticResource ButtonStyle}" />
+        <Button
+            Margin="0,0,50,0"
+            Click="DeleteList"
+            Content="Delete"
+            Style="{StaticResource ButtonStyle}" />
+        <Button
+            Margin="100,0,0,0"
+            Click="ClearList"
+            Content="Clear"
+            Style="{StaticResource ButtonStyle}" />
+        <Button
+            Margin="250,0,0,0"
+            Click="UpdateList"
+            Content="Update"
+            Style="{StaticResource ButtonStyle}" />
+        <ListView
+            x:Name="MyList"
+            Width="370"
+            HorizontalAlignment="Center"
+            ItemsSource="{Binding Employees}"
+            Opacity="0.7"
+            SelectionMode="Multiple">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn
+                        Width="125"
+                        DisplayMemberBinding="{Binding Name}"
+                        Header="Name" />
+                    <GridViewColumn
+                        Width="125"
+                        DisplayMemberBinding="{Binding Address}"
+                        Header="Address" />
+                    <GridViewColumn
+                        Width="125"
+                        DisplayMemberBinding="{Binding DOB}"
+                        Header="Date Of Birth" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

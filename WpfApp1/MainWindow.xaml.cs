@@ -24,7 +24,7 @@ namespace WpfApp1
         void ShowName(object sender, RoutedEventArgs e)
         {
             string name = myName.Text;
-            result.Text = $"Hello, {name}";
+            MessageBox.Show($"Hello, {name}");
         }
         void stackPanel(object sender, RoutedEventArgs e)
         {
@@ -60,6 +60,11 @@ namespace WpfApp1
         {
             WindowListView windowListView = new WindowListView();
             windowListView.Show();            
+        }
+        void GridView(object sender, RoutedEventArgs e)
+        {
+            WindowGridView windowGridView = new WindowGridView();
+            windowGridView.Show();
         }
     }
 }

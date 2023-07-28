@@ -49,15 +49,7 @@
             <Button.Height>30</Button.Height>
             <Button.Width>70</Button.Width>
         </Button>
-
-        <TextBlock
-            x:Name="result"
-            Grid.Row="1"
-            Grid.Column="1"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            FontWeight="Bold"
-            Style="{StaticResource textStyle}" />
+        
         <Button
             Grid.Row="0"
             Grid.Column="0"
@@ -142,6 +134,19 @@
             Background="CadetBlue"
             Click="ListView"
             Content="List View"
+            FontWeight="Bold"
+            FontFamily="Times New Roman"
+            Foreground="White" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            Width="100"
+            Height="100"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="Firebrick"
+            Click="GridView"
+            Content="Grid View"
             FontWeight="Bold"
             FontFamily="Times New Roman"
             Foreground="White" />

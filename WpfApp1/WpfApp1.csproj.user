@@ -16,6 +16,9 @@
     <Compile Update="WindowDockPanel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="WindowGridView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="WindowListView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -40,6 +43,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WindowDockPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowGridView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WindowListView.xaml">
