@@ -56,5 +56,10 @@ namespace WpfApp1
             WindowLogin windowLogin = new WindowLogin();
             windowLogin.Show();
         }
+        void ListView(object sender, RoutedEventArgs e)
+        {
+            WindowListView windowListView = new WindowListView();
+            windowListView.Show();            
+        }
     }
 }

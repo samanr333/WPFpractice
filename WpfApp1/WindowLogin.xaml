@@ -235,14 +235,11 @@
             Height="60"
             Opacity="0.4">
             <RichTextBox x:Name="RichText">
-                <FlowDocument Background="c">
+                <FlowDocument Background="CadetBlue">
                     <Paragraph>
-                        Roses are red,
-                        <LineBreak />
-                        Violets are blue,
-                        <LineBreak />
-                        Unexpected ';'
-                        <Bold>on Line 32</Bold>
+                        Roses are red,<LineBreak />
+                        Violets are blue,<LineBreak />
+                        Unexpected ';'<Bold>on Line 32</Bold>
                     </Paragraph>
                 </FlowDocument>
             </RichTextBox>

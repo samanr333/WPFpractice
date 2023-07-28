@@ -37,6 +37,7 @@ namespace WpfApp1
                 gender = "Female";
             else if (other.IsChecked == true)
                 gender = "Other";
+
             // For Hobbies from check box
             string? hobby1 = null;
             string? hobby2 = null;

@@ -1,0 +1,55 @@
+﻿<Window
+    x:Class="WpfApp1.WindowListView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfApp1"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="WindowListView"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid Background="CadetBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBox
+            x:Name="ListEntry"
+            Grid.Row="0"
+            Grid.Column="1"
+            Width="200"
+            Height="50" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            Width="50"
+            Height="20"
+            VerticalAlignment="Top"
+            Margin="0,0,150,0"
+            Click="AddList"
+            Content="Add" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            Width="50"
+            Height="20"
+            VerticalAlignment="Top"
+            Click="DeleteList"
+            Content="Delete" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            Width="50"
+            Height="20"
+            VerticalAlignment="Top"
+            Margin="150,0,0,0"
+            Click="ClearList"
+            Content="Clear" />
+        <ListView x:Name="MyList" Opacity="0.6" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"/>
+    </Grid>
+</Window>
