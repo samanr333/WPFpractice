@@ -29,8 +29,8 @@
             Grid.Column="1"
             Width="50"
             Height="20"
-            VerticalAlignment="Top"
             Margin="0,0,150,0"
+            VerticalAlignment="Top"
             Click="AddList"
             Content="Add" />
         <Button
@@ -46,10 +46,16 @@
             Grid.Column="1"
             Width="50"
             Height="20"
-            VerticalAlignment="Top"
             Margin="150,0,0,0"
+            VerticalAlignment="Top"
             Click="ClearList"
             Content="Clear" />
-        <ListView x:Name="MyList" Opacity="0.6" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"/>
+        <ListView
+            x:Name="MyList"
+            Grid.Row="0"
+            Grid.RowSpan="2"
+            Grid.Column="0"
+            Opacity="0.6" 
+            SelectionMode="Multiple"/>
     </Grid>
 </Window>

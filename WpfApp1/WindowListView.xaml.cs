@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,8 +31,17 @@ namespace WpfApp1
         }
         void DeleteList(object sender, RoutedEventArgs e)
         {
-            int index = MyList.SelectedIndex;
-            MyList.Items.RemoveAt(index);
+            /*object items = MyList.SelectedItems;*/
+            var items = MyList.SelectedItems;
+            var result = MessageBox.Show($"Are you sure you want to delete {items.Count} items?", "!", MessageBoxButton.YesNo);
+            if(result == MessageBoxResult.Yes)
+            {
+                var itemlist = new ArrayList (items);
+                foreach(var item in itemlist)
+                {
+                    MyList.Items.Remove(item);
+                }
+            }
         }
     }
 }
