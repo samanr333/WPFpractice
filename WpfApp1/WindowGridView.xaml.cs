@@ -27,7 +27,7 @@ namespace WpfApp1
         }
         void AddList(object sender, RoutedEventArgs e)
         {
-            if(!string.IsNullOrEmpty(NameEntry.Text) && !string.IsNullOrEmpty(AddressEntry.Text) && DateOnly.TryParse(DobEntry.Text, out DateOnly dob)) 
+            if(!string.IsNullOrEmpty(NameEntry.Text) && !string.IsNullOrEmpty(AddressEntry.Text) && DateTime.TryParse(DobEntry.Text, out DateTime dob)) 
             {
                 Employee employee = new Employee { Name = NameEntry.Text, Address = AddressEntry.Text, DOB = dob};
                 Employees.Add(employee);
@@ -55,7 +55,23 @@ namespace WpfApp1
         }
         void UpdateList(object sender, RoutedEventArgs e)
         {
-            
+            if(MyList.SelectedItem is Employee employee)
+            {
+                employee.Name = NameEntry.Text;
+                employee.Address = AddressEntry.Text;
+                employee.DOB = DobEntry.SelectedDate.GetValueOrDefault();
+                MyList.Items.Refresh();
+
+            }            
+        }
+        public void ListChange(object sender, SelectionChangedEventArgs e)
+        {
+            if(MyList.SelectedItem is  Employee employee) 
+            {
+                NameEntry.Text = employee.Name;
+                AddressEntry.Text = employee.Address;
+                DobEntry.Text = employee.DOB.ToString();
+            }
         }
     }
 }

@@ -41,7 +41,7 @@
             <Setter Property="VerticalAlignment" Value="Top" />
         </Style>
     </Window.Resources>
-    <Grid Background="RosyBrown">
+    <Grid Background="CadetBlue">
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
             <ColumnDefinition />
@@ -114,10 +114,20 @@
             Click="UpdateList"
             Content="Update"
             Style="{StaticResource ButtonStyle}" />
+        <TextBlock
+            Margin="20"
+            HorizontalAlignment="Center"
+            FontSize="30"
+            FontWeight="Bold"
+            Foreground="IndianRed"
+            Text="Employee Details" />
         <ListView
             x:Name="MyList"
+            Grid.RowSpan="2"
             Width="370"
+            Height="300"
             HorizontalAlignment="Center"
+            SelectionChanged="ListChange"
             ItemsSource="{Binding Employees}"
             Opacity="0.7"
             SelectionMode="Multiple">
