@@ -21,7 +21,7 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
-        void showName(object sender, RoutedEventArgs e)
+        void ShowName(object sender, RoutedEventArgs e)
         {
             string name = myName.Text;
             result.Text = $"Hello, {name}";

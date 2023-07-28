@@ -29,7 +29,7 @@
             Grid.Column="1"
             Width="50"
             Height="20"
-            Margin="0,0,150,0"
+            Margin="0,0,250,0"
             VerticalAlignment="Top"
             Click="AddList"
             Content="Add" />
@@ -38,6 +38,7 @@
             Grid.Column="1"
             Width="50"
             Height="20"
+            Margin="0,0,100,0"
             VerticalAlignment="Top"
             Click="DeleteList"
             Content="Delete" />
@@ -46,16 +47,26 @@
             Grid.Column="1"
             Width="50"
             Height="20"
-            Margin="150,0,0,0"
+            Margin="50,0,0,0"
             VerticalAlignment="Top"
             Click="ClearList"
             Content="Clear" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            Width="50"
+            Height="20"
+            Margin="200,0,0,0"
+            VerticalAlignment="Top"
+            Click="UpdateList"
+            Content="Update" />
         <ListView
             x:Name="MyList"
             Grid.Row="0"
             Grid.RowSpan="2"
             Grid.Column="0"
             Opacity="0.6" 
-            SelectionMode="Multiple"/>
+            SelectionMode="Multiple"
+            ItemsSource="{Binding Entries}"/>
     </Grid>
 </Window>

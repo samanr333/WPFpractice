@@ -42,7 +42,7 @@
             VerticalAlignment="Bottom"
             BorderBrush="Red"
             BorderThickness="3px"
-            Click="showName">
+            Click="ShowName">
             <!--  Property element  -->
             <Button.Content>Click me</Button.Content>
             <Button.Background>yellow</Button.Background>

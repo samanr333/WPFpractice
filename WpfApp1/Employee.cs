@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace WpfApp1
 {
-    internal class Employee
+    public class Employee
     {
+        
     }
 }
