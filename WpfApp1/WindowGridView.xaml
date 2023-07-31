@@ -171,7 +171,8 @@
                 Canvas.Left="40"
                 Canvas.Top="10"
                 Width="100"
-                Height="20" />
+                Height="20"
+                Opacity=".7" />
             <Button
                 Canvas.Left="145"
                 Canvas.Top="10"
@@ -193,6 +194,38 @@
                 Click="GroupList"
                 Content="🔧"
                 Style="{StaticResource ButtonStyle}" />
+            <Button
+                Canvas.Left="100"
+                Canvas.Top="83"
+                Background="RosyBrown"
+                Click="ResetList"
+                Content="Reset Filters"
+                FontFamily="Times New Roman"
+                FontWeight="Bold" />
+            <!--  Sort by  -->
+            <TextBlock
+                Canvas.Left="190"
+                Canvas.Top="46"
+                FontFamily="Times New Roman"
+                FontWeight="Bold"
+                Foreground="Indigo"
+                Text="Sort By:" />
+            <ComboBox
+                x:Name="SortBy"
+                Canvas.Left="235"
+                Canvas.Top="44"
+                Style="{StaticResource ComboBoxStyle}">
+                <ComboBoxItem Content="Name" />
+                <ComboBoxItem Content="Age" />
+            </ComboBox>
+            <Button
+                Canvas.Left="310"
+                Canvas.Top="43"
+                Background="CadetBlue"
+                Click="SortList"
+                Content="⚙️"
+                Style="{StaticResource ButtonStyle}" />
+            <!--  To reset filters  -->
             <Button
                 Canvas.Left="100"
                 Canvas.Top="83"

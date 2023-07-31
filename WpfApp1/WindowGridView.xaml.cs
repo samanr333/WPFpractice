@@ -93,6 +93,23 @@ namespace WpfApp1
             CollectionView viewEmployee = (CollectionView)CollectionViewSource.GetDefaultView(MyList.ItemsSource);
             PropertyGroupDescription groupDescriptionEmployee = new PropertyGroupDescription("Address");
             viewEmployee.GroupDescriptions.Add(groupDescriptionEmployee);
+        }
+        public void SortList(object sender, RoutedEventArgs e)
+        {
+            string sortBy = SortBy.Text;
+            MyList.ItemsSource = Employees;
+            CollectionView viewEmployee = (CollectionView)CollectionViewSource.GetDefaultView(MyList.ItemsSource);
+            if (sortBy == "Name")
+            {
+                SortDescription sortDescriptionEmployee = new SortDescription("Name", ListSortDirection.Ascending);
+                viewEmployee.SortDescriptions.Add(sortDescriptionEmployee);
+            }
+            if (sortBy == "Age")
+            {
+                SortDescription sortDescriptionEmployee = new SortDescription("DOB", ListSortDirection.Ascending);
+                viewEmployee.SortDescriptions.Add(sortDescriptionEmployee);
+            }
+
 
         }
         public void ResetList(object sender, RoutedEventArgs e)
@@ -100,7 +117,7 @@ namespace WpfApp1
             MyList.ItemsSource = Employees;
             CollectionView viewEmployee = (CollectionView)CollectionViewSource.GetDefaultView(MyList.ItemsSource);
             viewEmployee.GroupDescriptions.Clear();
-
+            viewEmployee.SortDescriptions.Clear();
         }
     }
 }
