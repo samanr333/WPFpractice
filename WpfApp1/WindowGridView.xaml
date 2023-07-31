@@ -61,6 +61,7 @@
                 <RowDefinition />
                 <RowDefinition />
                 <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
@@ -99,6 +100,18 @@
                 Grid.Column="1"
                 Grid.ColumnSpan="2"
                 Style="{StaticResource DatePickerStyle}" />
+            <Label
+                Grid.Row="3"
+                Grid.Column="0"
+                Content="Salary: "
+                Style="{StaticResource LabelStyle}" />
+            <TextBox
+                x:Name="SalaryEntry"
+                Grid.Row="3"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Style="{StaticResource TextBoxStyle}" />
+            
         </Grid>
         <Button
             Margin="0,0,200,0"
@@ -129,7 +142,6 @@
         <ListView
             x:Name="MyList"
             Grid.RowSpan="2"
-            Width="400"
             Height="200"
             Margin="0,20,0,0"
             HorizontalAlignment="Center"
@@ -141,17 +153,21 @@
             <ListView.View>
                 <GridView>
                     <GridViewColumn
-                        Width="125"
+                        Width="90"
                         DisplayMemberBinding="{Binding Name}"
                         Header="Name" />
                     <GridViewColumn
-                        Width="125"
+                        Width="90"
                         DisplayMemberBinding="{Binding Address}"
                         Header="Address" />
                     <GridViewColumn
-                        Width="155"
+                        Width="90"
                         DisplayMemberBinding="{Binding DOB}"
                         Header="Date Of Birth" />
+                    <GridViewColumn
+                        Width="90"
+                        DisplayMemberBinding="{Binding Salary}"
+                        Header="Salary" />
                 </GridView>
             </ListView.View>
         </ListView>
@@ -216,7 +232,7 @@
                 Canvas.Top="44"
                 Style="{StaticResource ComboBoxStyle}">
                 <ComboBoxItem Content="Name" />
-                <ComboBoxItem Content="Age" />
+                <ComboBoxItem Content="Salary" />
             </ComboBox>
             <Button
                 Canvas.Left="310"

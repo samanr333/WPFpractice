@@ -24,18 +24,25 @@ namespace WpfApp1
         public WindowGridView()
         {
             Employees = new ObservableCollection<Employee>();
+            // Adding Employees
+            Employees.Add(new Employee { Name = "Bibek",Address = "Bhaktapur", DOB = new DateOnly(2001, 5, 15), Salary = 20000 });
+            Employees.Add(new Employee { Name = "Sachin", Address = "Kathmandu", DOB = new DateOnly(1999, 3, 25), Salary = 18500 });
+            Employees.Add(new Employee { Name = "Sanju", Address = "Chitwan", DOB = new DateOnly(1998, 4, 16), Salary = 25000 });
+            Employees.Add(new Employee { Name = "Pranish", Address = "Hetauda", DOB = new DateOnly(2000, 3, 28), Salary = 15000 });
+            Employees.Add(new Employee { Name = "Saman", Address = "Kathmandu", DOB = new DateOnly(1999, 3, 25), Salary = 20000 });
             DataContext = this;
             InitializeComponent();
         }
         void AddList(object sender, RoutedEventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(NameEntry.Text) && !string.IsNullOrWhiteSpace(AddressEntry.Text) && DateOnly.TryParse(DobEntry.Text, out DateOnly dob))
+            if (!string.IsNullOrWhiteSpace(NameEntry.Text) && !string.IsNullOrWhiteSpace(AddressEntry.Text) && DateOnly.TryParse(DobEntry.Text, out DateOnly dob ) && double.TryParse(SalaryEntry.Text, out double salary))
             {
-                Employee employee = new Employee { Name = NameEntry.Text, Address = AddressEntry.Text, DOB = dob };
+                Employee employee = new Employee { Name = NameEntry.Text, Address = AddressEntry.Text, DOB = dob, Salary = salary };
                 Employees.Add(employee);
                 NameEntry.Text = "";
                 AddressEntry.Text = "";
                 DobEntry.Text = "";
+                SalaryEntry.Text = "";
             }
             else
             {
@@ -66,6 +73,7 @@ namespace WpfApp1
                 employee.Name = NameEntry.Text;
                 employee.Address = AddressEntry.Text;
                 employee.DOB = DateOnly.Parse(DobEntry.Text);
+                employee.Salary = Double.Parse(SalaryEntry.Text);
                 MyList.Items.Refresh();
                 //Parse just parses the data but Tryparse parse the data and stores the value in a variable and if there is exception it stores a boolean value.
             }
@@ -77,6 +85,7 @@ namespace WpfApp1
                 NameEntry.Text = employee.Name;
                 AddressEntry.Text = employee.Address;
                 DobEntry.Text = employee.DOB.ToString();
+                SalaryEntry.Text = employee.Salary.ToString();
             }
         }
         public void SearchList(object sender, RoutedEventArgs e)
@@ -104,9 +113,9 @@ namespace WpfApp1
                 SortDescription sortDescriptionEmployee = new SortDescription("Name", ListSortDirection.Ascending);
                 viewEmployee.SortDescriptions.Add(sortDescriptionEmployee);
             }
-            if (sortBy == "Age")
+            if (sortBy == "Salary")
             {
-                SortDescription sortDescriptionEmployee = new SortDescription("DOB", ListSortDirection.Ascending);
+                SortDescription sortDescriptionEmployee = new SortDescription("Salary", ListSortDirection.Ascending);
                 viewEmployee.SortDescriptions.Add(sortDescriptionEmployee);
             }
 

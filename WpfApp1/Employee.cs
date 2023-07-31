@@ -11,5 +11,6 @@ namespace WpfApp1
         public string Name { get; set; }
         public string Address { get; set; }
         public DateOnly DOB { get; set; }
+        public double Salary { get; set; }
     }
 }
