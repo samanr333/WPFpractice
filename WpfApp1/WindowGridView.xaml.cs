@@ -98,15 +98,13 @@ namespace WpfApp1
         }
         public void GroupList(object sender, RoutedEventArgs e)
         {
-            MyList.ItemsSource = Employees;
             CollectionView viewEmployee = (CollectionView)CollectionViewSource.GetDefaultView(MyList.ItemsSource);
             PropertyGroupDescription groupDescriptionEmployee = new PropertyGroupDescription("Address");
             viewEmployee.GroupDescriptions.Add(groupDescriptionEmployee);
         }
-        public void SortList(object sender, RoutedEventArgs e)
+        public async void SortList(object sender, RoutedEventArgs e)
         {
             string sortBy = SortBy.Text;
-            MyList.ItemsSource = Employees;
             CollectionView viewEmployee = (CollectionView)CollectionViewSource.GetDefaultView(MyList.ItemsSource);
             if (sortBy == "Name")
             {
@@ -123,7 +121,6 @@ namespace WpfApp1
         }
         public void ResetList(object sender, RoutedEventArgs e)
         {
-            MyList.ItemsSource = Employees;
             CollectionView viewEmployee = (CollectionView)CollectionViewSource.GetDefaultView(MyList.ItemsSource);
             viewEmployee.GroupDescriptions.Clear();
             viewEmployee.SortDescriptions.Clear();

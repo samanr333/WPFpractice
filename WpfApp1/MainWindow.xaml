@@ -29,6 +29,7 @@
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" />
         <!--  Grid.Row is attached property  -->
         <TextBox
             x:Name="myName"
@@ -49,7 +50,7 @@
             <Button.Height>30</Button.Height>
             <Button.Width>70</Button.Width>
         </Button>
-        
+
         <Button
             Grid.Row="0"
             Grid.Column="0"
@@ -108,8 +109,8 @@
             Background="black"
             Click="Avengers"
             Content="Avengers"
-            FontWeight="Bold"
             FontFamily="Times New Roman"
+            FontWeight="Bold"
             Foreground="White" />
         <Button
             Grid.Row="2"
@@ -121,8 +122,8 @@
             Background="SaddleBrown"
             Click="Login"
             Content="Login"
-            FontWeight="Bold"
             FontFamily="Times New Roman"
+            FontWeight="Bold"
             Foreground="White" />
         <Button
             Grid.Row="2"
@@ -134,8 +135,8 @@
             Background="CadetBlue"
             Click="ListView"
             Content="List View"
-            FontWeight="Bold"
             FontFamily="Times New Roman"
+            FontWeight="Bold"
             Foreground="White" />
         <Button
             Grid.Row="1"
@@ -147,8 +148,8 @@
             Background="Firebrick"
             Click="GridView"
             Content="Grid View"
-            FontWeight="Bold"
             FontFamily="Times New Roman"
+            FontWeight="Bold"
             Foreground="White" />
     </Grid>
 </Window>

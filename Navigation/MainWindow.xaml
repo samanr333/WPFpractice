@@ -1,0 +1,43 @@
+﻿<Window
+    x:Class="Navigation.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Navigation"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid Background="CadetBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <NavigationWindow x:Name="mainWindows" />
+        <TextBlock
+            FontSize="50"
+            FontWeight="Bold"
+            Foreground="Bisque"
+            Text="Hello, Welcome to Home Page."
+            TextAlignment="Center" />
+        <Frame
+            x:Name="mainFrame"
+            Grid.Row="1"
+            NavigationUIVisibility="Visible" />
+        <DockPanel Width="250" HorizontalAlignment="Center">
+            <Button
+                Grid.Row="1"
+                Width="70"
+                Height="20"
+                Click="Firstpage"
+                Content="First Page" />
+            <Button
+                Grid.Row="1"
+                Width="70"
+                Height="20"
+                Click="Secondpage"
+                Content="Second Page" />
+        </DockPanel>
+    </Grid>
+</Window>
