@@ -142,8 +142,9 @@
         <ListView
             x:Name="MyList"
             Grid.RowSpan="2"
-            Height="200"
-            Margin="0,20,0,0"
+            Height="350"
+            VerticalAlignment="Top"
+            Margin="0,45,0,0"
             HorizontalAlignment="Center"
             FontFamily="Times New Roman"
             FontSize="12"
