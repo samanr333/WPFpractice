@@ -40,6 +40,12 @@
             <Setter Property="Height" Value="20" />
             <Setter Property="VerticalAlignment" Value="Top" />
         </Style>
+        <!--  Styles for Combo box  -->
+        <Style x:Key="ComboBoxStyle" TargetType="ComboBox">
+            <Setter Property="Height" Value="18" />
+            <Setter Property="Width" Value="70" />
+            <Setter Property="FontSize" Value="8" />
+        </Style>
     </Window.Resources>
     <Grid Background="CadetBlue">
         <Grid.ColumnDefinitions>
@@ -115,7 +121,6 @@
             Content="Update"
             Style="{StaticResource ButtonStyle}" />
         <TextBlock
-            Margin="20"
             HorizontalAlignment="Center"
             FontSize="30"
             FontWeight="Bold"
@@ -125,11 +130,14 @@
             x:Name="MyList"
             Grid.RowSpan="2"
             Width="400"
-            Height="300"
+            Height="200"
+            Margin="0,20,0,0"
             HorizontalAlignment="Center"
-            SelectionChanged="ListChange"
+            FontFamily="Times New Roman"
+            FontSize="12"
             ItemsSource="{Binding Employees}"
-            Opacity="0.7">
+            Opacity="0.7"
+            SelectionChanged="ListChange">
             <ListView.View>
                 <GridView>
                     <GridViewColumn
@@ -147,5 +155,52 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <Canvas
+            Grid.Row="1"
+            Grid.Column="1"
+            Margin="30">
+            <!--  Search  -->
+            <TextBlock
+                Canvas.Top="13"
+                FontFamily="Times New Roman"
+                FontWeight="Bold"
+                Foreground="Indigo"
+                Text="Search:" />
+            <TextBox
+                x:Name="SearchBox"
+                Canvas.Left="40"
+                Canvas.Top="10"
+                Width="100"
+                Height="20" />
+            <Button
+                Canvas.Left="145"
+                Canvas.Top="10"
+                Background="CadetBlue"
+                Click="SearchList"
+                Content="🔍"
+                Style="{StaticResource ButtonStyle}" />
+            <!--  Group by  -->
+            <TextBlock
+                Canvas.Top="46"
+                FontFamily="Times New Roman"
+                FontWeight="Bold"
+                Foreground="Indigo"
+                Text="Group By Address:" />
+            <Button
+                Canvas.Left="105"
+                Canvas.Top="43"
+                Background="CadetBlue"
+                Click="GroupList"
+                Content="🔧"
+                Style="{StaticResource ButtonStyle}" />
+            <Button
+                Canvas.Left="100"
+                Canvas.Top="83"
+                Background="RosyBrown"
+                Click="ResetList"
+                Content="Reset Filters"
+                FontFamily="Times New Roman"
+                FontWeight="Bold" />
+        </Canvas>
     </Grid>
 </Window>
