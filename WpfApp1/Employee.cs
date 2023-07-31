@@ -10,6 +10,6 @@ namespace WpfApp1
     {
         public string Name { get; set; }
         public string Address { get; set; }
-        public DateTime DOB { get; set; }
+        public DateOnly DOB { get; set; }
     }
 }

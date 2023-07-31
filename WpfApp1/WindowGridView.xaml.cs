@@ -27,14 +27,14 @@ namespace WpfApp1
         }
         void AddList(object sender, RoutedEventArgs e)
         {
-            if(!string.IsNullOrEmpty(NameEntry.Text) && !string.IsNullOrEmpty(AddressEntry.Text) && DateTime.TryParse(DobEntry.Text, out DateTime dob)) 
+            if(!string.IsNullOrWhiteSpace(NameEntry.Text) && !string.IsNullOrWhiteSpace(AddressEntry.Text) && DateOnly.TryParse(DobEntry.Text, out DateOnly dob)) 
             {
                 Employee employee = new Employee { Name = NameEntry.Text, Address = AddressEntry.Text, DOB = dob};
                 Employees.Add(employee);
             }
             else
             {
-                MessageBox.Show("Please Enter a all fields with valid values");
+                MessageBox.Show("Please Enter all fields with valid values");
             }
         }
         void ClearList(object sender, RoutedEventArgs e)
@@ -59,7 +59,7 @@ namespace WpfApp1
             {
                 employee.Name = NameEntry.Text;
                 employee.Address = AddressEntry.Text;
-                employee.DOB = DobEntry.SelectedDate.GetValueOrDefault();
+                employee.DOB = DateOnly.Parse(DobEntry.Text); 
                 MyList.Items.Refresh();
 
             }            

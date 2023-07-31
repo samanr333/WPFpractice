@@ -124,13 +124,12 @@
         <ListView
             x:Name="MyList"
             Grid.RowSpan="2"
-            Width="370"
+            Width="400"
             Height="300"
             HorizontalAlignment="Center"
             SelectionChanged="ListChange"
             ItemsSource="{Binding Employees}"
-            Opacity="0.7"
-            SelectionMode="Multiple">
+            Opacity="0.7">
             <ListView.View>
                 <GridView>
                     <GridViewColumn
@@ -142,7 +141,7 @@
                         DisplayMemberBinding="{Binding Address}"
                         Header="Address" />
                     <GridViewColumn
-                        Width="125"
+                        Width="155"
                         DisplayMemberBinding="{Binding DOB}"
                         Header="Date Of Birth" />
                 </GridView>
