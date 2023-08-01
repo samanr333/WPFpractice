@@ -28,13 +28,21 @@ namespace WpfApp1
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
         }
-        private void OpenFileClick(object sender, RoutedEventArgs e)
+        public void OpenFileClick(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
             {
                 var pathName = openFileDialog.FileName;
                 MessageBox.Show($"The selected file path is {pathName}");
+            }
+        }
+        public void PrintClick(object sender, RoutedEventArgs e)
+        {
+            PrintDialog printDialog = new PrintDialog();
+            if (printDialog.ShowDialog() == true)
+            {
+                MessageBox.Show("Printing document");
             }
         }
     }
