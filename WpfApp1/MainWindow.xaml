@@ -29,7 +29,6 @@
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" />
         <!--  Grid.Row is attached property  -->
         <TextBox
             x:Name="myName"

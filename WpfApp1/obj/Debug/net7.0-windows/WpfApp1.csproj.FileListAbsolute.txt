@@ -36,3 +36,7 @@ C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\WpfApp1\obj\De
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WindowListView.baml
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WindowGridView.g.cs
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WindowGridView.baml
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WindowNavigation.g.cs
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WindowNavigation.baml
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\Page1.g.cs
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\Page1.baml

@@ -14,7 +14,6 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <NavigationWindow x:Name="mainWindows" />
         <TextBlock
             FontSize="50"
             FontWeight="Bold"

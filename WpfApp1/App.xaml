@@ -3,7 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:WpfApp1"
-    StartupUri="MainWindow.xaml">
+    StartupUri="WindowNavigation.xaml">
     <Application.Resources>
         <!--  This resource can be accessed throughout the app  -->
         <Color x:Key="appColor">green</Color>

@@ -16,5 +16,15 @@
             Foreground="Bisque"
             Text="Hello, Welcome to First Page."
             TextAlignment="Center" />
+        <Border
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="Khaki">
+            <TextBlock>
+                <Hyperlink NavigateUri="/SecondPage.xaml">
+                    Click
+                </Hyperlink>
+            </TextBlock>
+        </Border>
     </Grid>
 </Page>

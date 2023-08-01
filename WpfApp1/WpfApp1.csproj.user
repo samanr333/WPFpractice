@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Page1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="WindowAvengers.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -25,6 +28,9 @@
     <Compile Update="WindowLogin.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="WindowNavigation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="WindowStackPanel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -34,6 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page1.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WindowAvengers.xaml">
@@ -52,6 +61,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WindowLogin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowNavigation.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WindowStackPanel.xaml">
