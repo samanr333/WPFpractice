@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,6 +27,15 @@ namespace WpfApp1
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
+        }
+        private void OpenFileClick(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+            {
+                var pathName = openFileDialog.FileName;
+                MessageBox.Show($"The selected file path is {pathName}");
+            }
         }
     }
 }

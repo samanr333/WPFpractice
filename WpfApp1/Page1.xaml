@@ -11,13 +11,38 @@
     mc:Ignorable="d">
 
     <Grid Background="Bisque">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
         <TextBlock
+            Grid.ColumnSpan="4"
+            Grid.Row="0"
+            Padding="40"
             HorizontalAlignment="Center"
             FontFamily="Times New Roman"
             FontSize="30"
             FontWeight="Bold"
             Foreground="IndianRed"
             Text="Click here to go to Main Window:" />
-        <Button Content="Click Me" Height="40" Width="70" Click="MainWindowClick"/>
+        <Button
+            Grid.Row="0"
+            Grid.ColumnSpan="3"
+            Width="100"
+            Height="30"
+            Click="MainWindowClick"
+            Content="Click Me" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="0"
+            Width="100"
+            Height="30"
+            Click="OpenFileClick"
+            Content="Open File" />
     </Grid>
 </Page>
