@@ -14,14 +14,15 @@ using System.Windows.Shapes;
 
 namespace Navigation
 {
-    /// <summary>
-    /// Interaction logic for FirstPage.xaml
-    /// </summary>
     public partial class FirstPage : Page
     {
         public FirstPage()
         {
             InitializeComponent();
         }
+        /*public void OpenGoogle(object sender, RoutedEventArgs e)
+        {
+
+        }*/
     }
 }

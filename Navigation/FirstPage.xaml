@@ -16,15 +16,21 @@
             Foreground="Bisque"
             Text="Hello, Welcome to First Page."
             TextAlignment="Center" />
-        <Border
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            Background="Khaki">
-            <TextBlock>
-                <Hyperlink NavigateUri="/SecondPage.xaml">
-                    Click
-                </Hyperlink>
-            </TextBlock>
-        </Border>
+        <WrapPanel Height="200" Margin="50">
+            <Border Background="GhostWhite">
+                <TextBlock>
+                    <Hyperlink NavigateUri="/SecondPage.xaml">
+                        Click To Navigate to Second Page
+                    </Hyperlink>
+                </TextBlock>
+            </Border>
+            <!--<Border Margin="20,0,0,0" Background="GhostWhite">
+                <TextBlock>
+                    <Hyperlink NavigateUri="https://www.google.com/" RequestNavigate="OpenGoogle">
+                        Google
+                    </Hyperlink>
+                </TextBlock>
+            </Border>-->
+        </WrapPanel>
     </Grid>
 </Page>

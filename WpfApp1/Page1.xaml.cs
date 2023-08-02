@@ -23,11 +23,15 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        // To navigate to main window
         void MainWindowClick(object sender, EventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
         }
+        
+        // For Dialogs
         public void OpenFileClick(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -45,5 +49,20 @@ namespace WpfApp1
                 MessageBox.Show("Printing document");
             }
         }
+        public void SaveFileClick(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            if(saveFileDialog.ShowDialog() == true)
+            {
+                MessageBox.Show("Saving Files");
+            }
+        }
+
+        // For Map Control
+        public void MapControlClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new MapControl());
+        }
+        
     }
 }
