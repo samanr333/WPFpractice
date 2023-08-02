@@ -44,7 +44,7 @@
                 Content="Name"
                 Style="{StaticResource LabelStyle}" />
             <TextBox
-                x:Name="name"
+                Text="{Binding Name}"
                 Grid.Row="1"
                 Style="{StaticResource TextBoxStyle}" />
             <Label
@@ -52,7 +52,7 @@
                 Content="Address"
                 Style="{StaticResource LabelStyle}" />
             <TextBox
-                x:Name="address"
+                Text="{Binding Address}"
                 Grid.Row="2"
                 Style="{StaticResource TextBoxStyle}" />
             <Label
@@ -60,7 +60,7 @@
                 Content="Phone"
                 Style="{StaticResource LabelStyle}" />
             <TextBox
-                x:Name="phone"
+                Text="{Binding Number}"
                 Grid.Row="3"
                 Style="{StaticResource TextBoxStyle}" />
             <Button
@@ -69,6 +69,7 @@
                 Height="20"
                 Background="DarkBlue"
                 Content="ADD ➕"
+                Command="{Binding AddUserCommand}"
                 FontWeight="Bold"
                 Foreground="White" />
         </Grid>

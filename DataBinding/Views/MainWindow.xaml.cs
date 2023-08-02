@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataBinding.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +20,9 @@ namespace DataBinding
     {
         public MainWindow()
         {
-            InitializeComponent();
+            MainViewModel mainViewModel = new MainViewModel();
+            this.DataContext = mainViewModel;
+            InitializeComponent();           
         }
     }
 }
