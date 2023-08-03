@@ -32,6 +32,7 @@
                 <RowDefinition />
                 <RowDefinition />
                 <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
             <TextBlock
                 HorizontalAlignment="Center"
@@ -63,13 +64,21 @@
                 Text="{Binding Number}"
                 Grid.Row="3"
                 Style="{StaticResource TextBoxStyle}" />
-            <Button
+            <Label
                 Grid.Row="4"
+                Content="Salary"
+                Style="{StaticResource LabelStyle}" />
+            <TextBox
+                Text="{Binding Salary}"
+                Grid.Row="4"
+                Style="{StaticResource TextBoxStyle}" />
+            <Button
+                Grid.Row="5"
                 Width="60"
                 Height="20"
                 Background="DarkBlue"
                 Content="ADD ➕"
-                Command="{Binding AddUserCommand}"
+                Command="{Binding AddPersonCommand}"
                 FontWeight="Bold"
                 Foreground="White" />
         </Grid>

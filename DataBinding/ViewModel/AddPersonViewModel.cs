@@ -10,6 +10,7 @@ namespace DataBinding.ViewModel
         public string? Name { get; set; }
         public string? Address { get; set; }
         public double? Number { get; set; }
+        public double? Salary { get; set; }
         public AddPersonViewModel()
         {
             AddPersonCommand = new RelayCommand(AddPerson, CanAddPerson);
@@ -21,7 +22,8 @@ namespace DataBinding.ViewModel
         }
         private void AddPerson(object obj)
         {
-            Manager.AddPerson(new Person() { Name = Name, Address = Address, Number = (double)Number });
+            Person person = new Person { Name = Name, Address = Address, Number = (double) Number, Salary = (double)Salary };
+            Manager.AddPerson(person);
         }
     }
 }

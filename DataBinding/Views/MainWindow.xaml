@@ -36,6 +36,10 @@
                             Width="100"
                             DisplayMemberBinding="{Binding Number}"
                             Header="Number" />
+                        <GridViewColumn
+                            Width="100"
+                            DisplayMemberBinding="{Binding Salary, StringFormat={}{0:C}}"
+                            Header="Salary" />
                     </GridView>
                 </ListView.View>
             </ListView>
