@@ -24,6 +24,8 @@ namespace WpfApp1
             InitializeComponent();
         }
     }
+
+    // Data converter to convert string to bool
     public class ChangeValue : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -42,6 +44,23 @@ namespace WpfApp1
                 return "Yes";
             }
             return false;
+        }
+    }
+    // Bool to visiblity converter
+    public class BoolToVisibilityConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            if((bool) value == true)
+            {
+                return Visibility.Visible;
+            }
+            return Visibility.Hidden;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            throw new NotImplementedException();
         }
     }
 }

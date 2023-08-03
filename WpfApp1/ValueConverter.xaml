@@ -10,20 +10,28 @@
     d:DesignWidth="800"
     mc:Ignorable="d">
     <Page.Resources>
-        <local:ChangeValue x:Key="ChangeValue" />
+        <local:ChangeValue x:Key="StringToBoolConverter" />
+        <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
     </Page.Resources>
 
     <Canvas Background="Wheat">
         <TextBox
-            Name="KeyValue"
+            Name="TextBox"
             Canvas.Left="365"
             Canvas.Top="178"
             Width="70"
             Height="20" />
         <CheckBox
-            IsChecked="{Binding Path=Text, ElementName=KeyValue, Converter={StaticResource ChangeValue}}"
+            x:Name="checkBox"
             Canvas.Left="382"
             Canvas.Top="213"
-            Content="Yes" />
+            Content="Yes"
+            IsChecked="{Binding Path=Text, ElementName=TextBox, Converter={StaticResource StringToBoolConverter}}" />
+        <!--  Bool to visiblity converter  -->
+        <TextBlock
+            Canvas.Left="321"
+            Canvas.Top="133"
+            Text="Hello, we are converting data!"
+            Visibility="{Binding Path=IsChecked, ElementName=checkBox, Converter={StaticResource BoolToVisibilityConverter}}" />
     </Canvas>
 </Page>
