@@ -26,7 +26,7 @@
                     <GridView>
                         <GridViewColumn
                             Width="100"
-                            DisplayMemberBinding="{Binding Name}"
+                            DisplayMemberBinding="{Binding Path=Name}"
                             Header="Name" />
                         <GridViewColumn
                             Width="100"
