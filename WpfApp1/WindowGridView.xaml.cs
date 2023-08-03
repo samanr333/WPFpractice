@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,7 +38,7 @@ namespace WpfApp1
         {
             if (!string.IsNullOrWhiteSpace(NameEntry.Text) && !string.IsNullOrWhiteSpace(AddressEntry.Text) && DateOnly.TryParse(DobEntry.Text, out DateOnly dob ) && double.TryParse(SalaryEntry.Text, out double salary))
             {
-                Employee employee = new Employee { Name = NameEntry.Text, Address = AddressEntry.Text, DOB = dob, Salary = salary };
+                Employee employee = new Employee { Name = NameEntry.Text, Address = AddressEntry.Text, DOB = dob, Salary = salary};
                 Employees.Add(employee);
                 NameEntry.Text = "";
                 AddressEntry.Text = "";

@@ -53,7 +53,7 @@ namespace Navigation {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Navigation;component/secondpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Navigation;V1.0.0.0;component/secondpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\SecondPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
