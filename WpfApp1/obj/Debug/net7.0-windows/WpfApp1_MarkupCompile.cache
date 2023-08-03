@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\WpfApp1\App.xaml
-121494155677
+13-713565490
 
-151148473572
+16856054302
 2091562040066
-MainWindow.xaml;MapControl.xaml;Page1.xaml;WindowAvengers.xaml;WindowCanvas.xaml;WindowDockPanel.xaml;WindowGridView.xaml;WindowListView.xaml;WindowLogin.xaml;WindowNavigation.xaml;WindowStackPanel.xaml;WindowWrapPanel.xaml;
+MainWindow.xaml;MapControl.xaml;Page1.xaml;ValueConverter.xaml;WindowAvengers.xaml;WindowCanvas.xaml;WindowDockPanel.xaml;WindowGridView.xaml;WindowListView.xaml;WindowLogin.xaml;WindowNavigation.xaml;WindowStackPanel.xaml;WindowWrapPanel.xaml;
 
 False
 

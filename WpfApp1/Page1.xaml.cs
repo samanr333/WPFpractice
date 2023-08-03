@@ -63,6 +63,11 @@ namespace WpfApp1
         {
             NavigationService.Navigate(new MapControl());
         }
-        
+        public void ValueConverterClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ValueConverter());
+        }
+
+
     }
 }

@@ -13,6 +13,9 @@
     <Compile Update="Page1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ValueConverter.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="WindowAvengers.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -49,6 +52,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Page1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ValueConverter.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WindowAvengers.xaml">

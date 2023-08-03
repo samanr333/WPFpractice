@@ -47,6 +47,11 @@
                 Click="MapControlClick"
                 Content="Map Control"
                 Style="{StaticResource PageButtonStyle}" />
+            <Button
+                Background="SaddleBrown"
+                Click="ValueConverterClick"
+                Content="Value Converter"
+                Style="{StaticResource PageButtonStyle}" />
         </WrapPanel>
     </Grid>
 </Page>

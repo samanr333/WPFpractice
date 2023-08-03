@@ -89,3 +89,6 @@ C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\WpfApp1\bin\De
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\WpfApp1\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\WpfApp1\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\WpfApp1\bin\Debug\net7.0-windows\Mono.TextTemplating.dll
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\ValueConverter.g.cs
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\ValueConverter.baml
