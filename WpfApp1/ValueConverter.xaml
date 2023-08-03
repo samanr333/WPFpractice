@@ -29,9 +29,14 @@
             IsChecked="{Binding Path=Text, ElementName=TextBox, Converter={StaticResource StringToBoolConverter}}" />
         <!--  Bool to visiblity converter  -->
         <TextBlock
-            Canvas.Left="321"
-            Canvas.Top="133"
+            Canvas.Left="208"
+            Canvas.Top="116"
+            FontFamily="Times new roman"
+            FontSize="30"
+            FontWeight="Bold"
+            Foreground="SaddleBrown"
             Text="Hello, we are converting data!"
+            TextAlignment="Center"
             Visibility="{Binding Path=IsChecked, ElementName=checkBox, Converter={StaticResource BoolToVisibilityConverter}}" />
     </Canvas>
 </Page>
