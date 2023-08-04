@@ -10,6 +10,9 @@
     <Compile Update="MapControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MultiBinding.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Page1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -52,6 +55,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MapControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MultiBinding.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Page1.xaml">

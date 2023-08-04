@@ -14,5 +14,9 @@
             <Setter Property="VerticalAlignment" Value="Bottom" />
             <Setter Property="HorizontalAlignment" Value="Center" />
         </Style>
+        <local:FullName
+            x:Key="fullname"
+            FirstName="Saman"
+            LastName="Raut" />
     </Application.Resources>
 </Application>

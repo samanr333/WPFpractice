@@ -9,6 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using MultiBinding;
 using System;
 using System.Diagnostics;
 using System.Windows;

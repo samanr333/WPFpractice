@@ -39,29 +39,27 @@
         </WrapPanel>
         <Canvas Grid.Column="1">
             <TextBlock
-               
                 Canvas.Left="149"
-                Canvas.Top="121"
-                HorizontalAlignment="Center"
+                Canvas.Top="42"
+                HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Text="{Binding myName, FallbackValue='Name not available'}" />
             <TextBlock
-               
-                Canvas.Left="148"
-                Canvas.Top="155"
+                Canvas.Left="149"
+                Canvas.Top="63"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-                Text="{Binding m, TargetNullValue='No name provided'}" />
+                Text="{Binding myNullName, TargetNullValue='No Name Provided'}" />
             <TextBox
                 x:Name="textName"
-                Canvas.Left="150"
-                Canvas.Top="189"
+                Canvas.Left="149"
+                Canvas.Top="98"
                 Width="100"
                 Height="20"
-                HorizontalAlignment="Center" />
+                HorizontalAlignment="Left" />
             <Button
-                Canvas.Left="185"
-                Canvas.Top="225"
+                Canvas.Left="178"
+                Canvas.Top="136"
                 Click="displayClick"
                 Content="Display" />
         </Canvas>

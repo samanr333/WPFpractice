@@ -75,6 +75,12 @@ namespace WpfApp1
         {
             NavigationService.Navigate(new RelativeBinding());
         }
+        
+        //For Multi-Binding
+        public void MultiBindingClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new MultiBinding());
+        }
 
     }
 }

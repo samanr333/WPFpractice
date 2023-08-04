@@ -57,6 +57,11 @@
                 Click="RelativeBindingClick"
                 Content="Relative Binding"
                 Style="{StaticResource PageButtonStyle}" />
+            <Button
+                Background="CornflowerBlue"
+                Click="MultiBindingClick"
+                Content="Multi-Binding"
+                Style="{StaticResource PageButtonStyle}" />
         </WrapPanel>
     </Grid>
 </Page>
