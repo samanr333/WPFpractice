@@ -63,11 +63,18 @@ namespace WpfApp1
         {
             NavigationService.Navigate(new MapControl());
         }
+
+        // For Data Converter
         public void ValueConverterClick(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new ValueConverter());
         }
 
+        // For Relative Binding
+        public void RelativeBindingClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new RelativeBinding());
+        }
 
     }
 }

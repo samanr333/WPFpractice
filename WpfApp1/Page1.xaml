@@ -52,6 +52,11 @@
                 Click="ValueConverterClick"
                 Content="Value Converter"
                 Style="{StaticResource PageButtonStyle}" />
+            <Button
+                Background="ForestGreen"
+                Click="RelativeBindingClick"
+                Content="Relative Binding"
+                Style="{StaticResource PageButtonStyle}" />
         </WrapPanel>
     </Grid>
 </Page>

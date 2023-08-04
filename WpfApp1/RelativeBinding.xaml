@@ -14,9 +14,21 @@
             <!--  Self Binding width of rectangle to its height  -->
             <Rectangle
                 Width="{Binding RelativeSource={RelativeSource Self}, Path=Height}"
-                Height="100"
+                Height="150"
                 Fill="Green"
                 Stroke="Black" />
+            <!--  Find Ancestors  -->
+            <Border
+                Name="Parent0"
+                Width="200"
+                Height="200">
+                <Border>
+                    <Rectangle
+                        Width="{Binding RelativeSource={RelativeSource AncestorType={x:Type Border}, AncestorLevel=1}, Path=ActualWidth}"
+                        Height="{Binding RelativeSource={RelativeSource self}, Path=Width}"
+                        Fill="pink" />
+                </Border>
+            </Border>
         </WrapPanel>
     </Grid>
 </Page>
