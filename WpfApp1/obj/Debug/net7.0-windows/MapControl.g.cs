@@ -9,6 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using CompiledBindings.Markup;
 using Microsoft.Maps.MapControl.WPF;
 using System;
 using System.Diagnostics;

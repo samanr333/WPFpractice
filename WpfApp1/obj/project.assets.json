@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net7.0-windows7.0": {
+      "CompiledBindings.WPF/1.0.16": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/CompiledBindings.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/CompiledBindings.dll": {}
+        },
+        "build": {
+          "build/CompiledBindings.WPF.targets": {}
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -381,6 +393,27 @@
     }
   },
   "libraries": {
+    "CompiledBindings.WPF/1.0.16": {
+      "sha512": "0ThWVB4ITTTIHgo4GWf+40adBDwqU2NzMKn/yUIsg4wRWgEXHoJJFcetXjL+GctlItrpvHgMtG4grjicNslsCQ==",
+      "type": "package",
+      "path": "compiledbindings.wpf/1.0.16",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/CompiledBindings.Core.dll",
+        "build/CompiledBindings.WPF.dll",
+        "build/CompiledBindings.WPF.targets",
+        "build/Mono.Cecil.Mdb.dll",
+        "build/Mono.Cecil.Pdb.dll",
+        "build/Mono.Cecil.Rocks.dll",
+        "build/Mono.Cecil.dll",
+        "compiledbindings.wpf.1.0.16.nupkg.sha512",
+        "compiledbindings.wpf.nuspec",
+        "lib/net35/CompiledBindings.dll",
+        "lib/net40/CompiledBindings.dll",
+        "lib/netcoreapp3.0/CompiledBindings.dll"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -970,6 +1003,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
+      "CompiledBindings.WPF >= 1.0.16",
       "Microsoft.EntityFrameworkCore >= 7.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.9",
       "Microsoft.Maps.MapControl.WPF >= 1.0.0.3"
@@ -1019,6 +1053,10 @@
       "net7.0-windows7.0": {
         "targetAlias": "net7.0-windows",
         "dependencies": {
+          "CompiledBindings.WPF": {
+            "target": "Package",
+            "version": "[1.0.16, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[7.0.9, )"

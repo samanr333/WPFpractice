@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nBU40ozaaU9rY20dVttOw/8MtLlcLWr8Wu5z2cdA9+dyhYHvOI+a29Wmp2kg/vjdOH3YqjkzlTHiOiMD64+chQ==",
+  "dgSpecHash": "UjHrSIwsgQnL2tqWTzNb/ILoLKv7taafMXGs2Iz43XK7OySZUhLyx2vw0c3BU/Z8Yv4FpgQd8qnyuvF9arjY8A==",
   "success": true,
   "projectFilePath": "C:\\Users\\saman\\OneDrive\\Desktop\\Bajra Trainee\\Course\\.NET\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\saman\\.nuget\\packages\\compiledbindings.wpf\\1.0.16\\compiledbindings.wpf.1.0.16.nupkg.sha512",
     "C:\\Users\\saman\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\saman\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.9\\microsoft.entityframeworkcore.7.0.9.nupkg.sha512",
     "C:\\Users\\saman\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.9\\microsoft.entityframeworkcore.abstractions.7.0.9.nupkg.sha512",

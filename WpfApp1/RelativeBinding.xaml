@@ -57,6 +57,12 @@
                 Width="100"
                 Height="20"
                 HorizontalAlignment="Left" />
+            <TextBlock
+                Canvas.Left="147"
+                Canvas.Top="209"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Text="{x:Bind compiledBind}" />
             <Button
                 Canvas.Left="178"
                 Canvas.Top="136"

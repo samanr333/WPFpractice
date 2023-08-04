@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="WpfApp1.RelativeBinding" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:WpfApp1" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Title="RelativeBinding" d:DesignHeight="450" d:DesignWidth="800" mc:Ignorable="d">
+    <Grid Background="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <WrapPanel Grid.Column="0" Margin="10">
+            <!--  Self Binding width of rectangle to its height  -->
+            <Rectangle Width="{Binding RelativeSource={RelativeSource Self}, Path=Height}" Height="150" Fill="Green" Stroke="Black" />
+            <!--  Find Ancestors  -->
+            <Border Name="Parent0" Width="200" Height="150" Background="SlateGray" BorderBrush="Black" BorderThickness="1">
+                <Border Width="150">
+                    <Rectangle Width="{Binding RelativeSource={RelativeSource AncestorType={x:Type Border}, AncestorLevel=1}, Path=Width}" Height="{Binding RelativeSource={RelativeSource self}, Path=Width}" Fill="pink" />
+                </Border>
+            </Border>
+        </WrapPanel>
+        <Canvas Grid.Column="1">
+            <TextBlock Canvas.Left="149" Canvas.Top="42" HorizontalAlignment="Left" VerticalAlignment="Top" Text="{Binding myName, FallbackValue='Name not available'}" />
+            <TextBlock Canvas.Left="149" Canvas.Top="63" HorizontalAlignment="Left" VerticalAlignment="Top" Text="{Binding myNullName, TargetNullValue='No Name Provided'}" />
+            <TextBox x:Name="textName" Canvas.Left="149" Canvas.Top="98" Width="100" Height="20" HorizontalAlignment="Left" />
+            <TextBlock Canvas.Left="147" Canvas.Top="209" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="textBlock1" />
+            <Button Canvas.Left="178" Canvas.Top="136" Click="displayClick" Content="Display" />
+        </Canvas>
+    </Grid>
+</Page>

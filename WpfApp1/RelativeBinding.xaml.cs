@@ -7,8 +7,10 @@ namespace WpfApp1
     {
         public string myName { get; set; }
         public string myNullName { get; set; }
+        public string compiledBind { get; set; }
         public RelativeBinding()
         {
+            compiledBind = "This is compiled binding";
             myNullName = null;
             InitializeComponent();
         }
