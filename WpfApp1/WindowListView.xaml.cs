@@ -65,6 +65,5 @@ namespace WpfApp1
             string updatedText = ListEntry.Text;
             Entries[selectedIndex] = updatedText;
         }
-
     }
 }

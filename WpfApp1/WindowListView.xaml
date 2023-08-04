@@ -60,13 +60,17 @@
             VerticalAlignment="Top"
             Click="UpdateList"
             Content="Update" />
+        <TextBlock
+            HorizontalAlignment="Center"
+            FontWeight="Bold"
+            Text="Names" />
         <ListView
             x:Name="MyList"
             Grid.Row="0"
-            Grid.RowSpan="2"
             Grid.Column="0"
-            Opacity="0.6" 
-            SelectionMode="Multiple"
-            ItemsSource="{Binding Entries}"/>
+            Margin="0,15,0,0"
+            ItemsSource="{Binding Entries}"
+            Opacity="0.6"
+            SelectionMode="Multiple" />
     </Grid>
 </Window>

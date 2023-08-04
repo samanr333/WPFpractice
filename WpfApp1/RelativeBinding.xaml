@@ -10,7 +10,11 @@
     d:DesignWidth="800"
     mc:Ignorable="d">
     <Grid Background="AliceBlue">
-        <WrapPanel Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <WrapPanel Grid.Column="0" Margin="10">
             <!--  Self Binding width of rectangle to its height  -->
             <Rectangle
                 Width="{Binding RelativeSource={RelativeSource Self}, Path=Height}"
@@ -21,14 +25,45 @@
             <Border
                 Name="Parent0"
                 Width="200"
-                Height="200">
-                <Border>
+                Height="150"
+                Background="SlateGray"
+                BorderBrush="Black"
+                BorderThickness="1">
+                <Border Width="150">
                     <Rectangle
-                        Width="{Binding RelativeSource={RelativeSource AncestorType={x:Type Border}, AncestorLevel=1}, Path=ActualWidth}"
+                        Width="{Binding RelativeSource={RelativeSource AncestorType={x:Type Border}, AncestorLevel=1}, Path=Width}"
                         Height="{Binding RelativeSource={RelativeSource self}, Path=Width}"
                         Fill="pink" />
                 </Border>
             </Border>
         </WrapPanel>
+        <Canvas Grid.Column="1">
+            <TextBlock
+               
+                Canvas.Left="149"
+                Canvas.Top="121"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Text="{Binding myName, FallbackValue='Name not available'}" />
+            <TextBlock
+               
+                Canvas.Left="148"
+                Canvas.Top="155"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Text="{Binding m, TargetNullValue='No name provided'}" />
+            <TextBox
+                x:Name="textName"
+                Canvas.Left="150"
+                Canvas.Top="189"
+                Width="100"
+                Height="20"
+                HorizontalAlignment="Center" />
+            <Button
+                Canvas.Left="185"
+                Canvas.Top="225"
+                Click="displayClick"
+                Content="Display" />
+        </Canvas>
     </Grid>
 </Page>
