@@ -28,13 +28,17 @@ namespace RoutedEvents
         {
             MessageBox.Show("Outer button clicked");
         }
-        public void Button2_Click(object sender, RoutedEventArgs f)
+        public void Button2_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Inner button clicked");
         }
-        public void Elipse_Click(object sender, MouseEventArgs m)
+        public void Elipse2_Click(object sender, MouseEventArgs e)
         {
-            MessageBox.Show("Elipse clicked");
+            this.Title = "Elipse has changed the title";
+        }
+        public void Elipse1_Move(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("Mouse moved to green elipse");
         }
     }
 }
