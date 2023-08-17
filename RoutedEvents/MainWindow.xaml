@@ -10,28 +10,36 @@
     Height="450"
     mc:Ignorable="d">
     <Grid Background="Beige">
-        <Button
-            Width="500"
-            Height="100"
-            Background="Pink"
-            Click="Button1_Click">
-            <Grid>
-                <Button
-                    Width="100"
-                    Height="50"
-                    Margin="-127,0,227,0"
-                    Background="Blue"
-                    Click="Button2_Click" />
-                <Ellipse
-                    Margin="55,0,55,0"
-                    Fill="Green"
-                    PreviewMouseMove="Elipse1_Move" />
-                <Ellipse
-                    Margin="231,0,-121,0"
-                    Fill="red"
-                    MouseDown="Elipse2_Click" />
+        <StackPanel
+            Width="600"
+            Height="300"
+            MouseEnter="Mouse_Enter"
+            MouseLeave="Mouse_Leave">
+            <Button
+                Width="500"
+                Height="100"
+                Margin="0,100,0,0"
+                Background="Transparent"
+                BorderThickness="5"
+                Click="Button1_Click">
+                <Grid>
+                    <Button
+                        Width="100"
+                        Height="50"
+                        Margin="-127,0,227,0"
+                        Background="Blue"
+                        Click="Button2_Click" />
+                    <Ellipse
+                        Margin="55,0,55,0"
+                        Fill="Green"
+                        PreviewMouseMove="Elipse1_Move" />
+                    <Ellipse
+                        Margin="231,0,-121,0"
+                        Fill="red"
+                        MouseDown="Elipse2_Click" />
 
-            </Grid>
-        </Button>
+                </Grid>
+            </Button>
+        </StackPanel>
     </Grid>
 </Window>

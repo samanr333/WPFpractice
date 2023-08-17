@@ -1,23 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace RoutedEvents
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -39,6 +26,18 @@ namespace RoutedEvents
         public void Elipse1_Move(object sender, MouseEventArgs e)
         {
             MessageBox.Show("Mouse moved to green elipse");
+        }
+
+        // Attached Events
+        public void Mouse_Enter(object sender, MouseEventArgs e)
+        {
+            StackPanel panel = (StackPanel)sender;
+            panel.Background = Brushes.Bisque;
+        }
+        public void Mouse_Leave(object sender, MouseEventArgs e)
+        {
+            StackPanel panel = (StackPanel)sender;
+            panel.Background = Brushes.Transparent;
         }
     }
 }
