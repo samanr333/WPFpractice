@@ -27,19 +27,15 @@
             Width="200"
             Height="70"
             Fill="Orange" />
-        <Ellipse
-            x:Name="DisplayRectangle"
-            Width="200"
-            Height="70"
-            Fill="Orange" />
         <Button
             Width="100"
             Height="30"
-            Margin="350,291,350,129"
+            Margin="0,150,0,0"
             Background="Red"
             Content="Unload"
             FontSize="18"
             FontWeight="Bold"
+            Click="ButtonClick"
             Foreground="White" />
     </Grid>
 </Page>

@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace RoutedEvents
 {
@@ -33,10 +23,19 @@ namespace RoutedEvents
             DisplayText.Text = "Loaded";
             DisplayRectangle.Fill = Brushes.Green;
         }
-/*        public void Page_Unloaded(object sender, System.EventArgs e)
+
+        private void Button_Unloaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+        public void Page_Unloaded(object sender, System.EventArgs e)
         {
             DisplayRectangle.Fill = Brushes.Red;
             DisplayText.Text = "Unloaded";
-        }*/
+        }
+        public void ButtonClick(object sender, RoutedEventArgs e)
+        {
+            Page_Unloaded(sender, e);
+        }
     }
 }
