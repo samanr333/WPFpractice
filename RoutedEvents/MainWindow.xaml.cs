@@ -5,7 +5,7 @@ using System.Windows.Media;
 
 namespace RoutedEvents
 {
-    public partial class MainWindow : Window
+    public partial class MainWindow : Page
     {
         public MainWindow()
         {
