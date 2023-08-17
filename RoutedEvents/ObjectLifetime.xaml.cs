@@ -15,14 +15,28 @@ using System.Windows.Shapes;
 
 namespace RoutedEvents
 {
-    /// <summary>
-    /// Interaction logic for ObjectLifetime.xaml
-    /// </summary>
     public partial class ObjectLifetime : Page
     {
         public ObjectLifetime()
         {
             InitializeComponent();
         }
+        public void Page_Initialized(object sender, System.EventArgs e)
+        {
+            MessageBox.Show("Initialized...");
+        }
+        public async void Page_Loaded(object sender, System.EventArgs e)
+        {
+            await Task.Delay(1000);
+            DisplayText.Text = "Loading";
+            await Task.Delay(1000);
+            DisplayText.Text = "Loaded";
+            DisplayRectangle.Fill = Brushes.Green;
+        }
+/*        public void Page_Unloaded(object sender, System.EventArgs e)
+        {
+            DisplayRectangle.Fill = Brushes.Red;
+            DisplayText.Text = "Unloaded";
+        }*/
     }
 }
