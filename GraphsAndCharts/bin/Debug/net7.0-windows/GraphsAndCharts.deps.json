@@ -1,0 +1,59 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "GraphsAndCharts/1.0.0": {
+        "dependencies": {
+          "Syncfusion.SfChart.WPF": "22.2.9"
+        },
+        "runtime": {
+          "GraphsAndCharts.dll": {}
+        }
+      },
+      "Syncfusion.Licensing/22.2.9": {
+        "runtime": {
+          "lib/net7.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "22.2.9.0",
+            "fileVersion": "22.2.9.0"
+          }
+        }
+      },
+      "Syncfusion.SfChart.WPF/22.2.9": {
+        "dependencies": {
+          "Syncfusion.Licensing": "22.2.9"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.SfChart.WPF.dll": {
+            "assemblyVersion": "22.2.9.0",
+            "fileVersion": "22.2.9.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GraphsAndCharts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Licensing/22.2.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wDMD/KvNcbSqeXf3nAOjLoAJpVCcv9oyvA55GZQUicTzFX9XT/nmW6SGSQkLTCDy61xZD1qeJ1qVq0bbDraQBw==",
+      "path": "syncfusion.licensing/22.2.9",
+      "hashPath": "syncfusion.licensing.22.2.9.nupkg.sha512"
+    },
+    "Syncfusion.SfChart.WPF/22.2.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Wh1aZCZY9KIEx6Ku7eGnjhp4HeKWqB33DdEX5M/MayHj5VKI9R0IkjRihnJObTw0eYOoN/kS/QD3Xy4sJinhzA==",
+      "path": "syncfusion.sfchart.wpf/22.2.9",
+      "hashPath": "syncfusion.sfchart.wpf.22.2.9.nupkg.sha512"
+    }
+  }
+}

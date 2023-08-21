@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "FKrIdNjeD98HQ6xpZO8zQdZQtcn41zu0BJ33KI5F9xS4k10/zU/0AvtLoxC27qBeNEEVlT0HIMpTL21D5t+wAA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\saman\\OneDrive\\Desktop\\Bajra Trainee\\Course\\.NET\\WpfApp2\\GraphsAndCharts\\GraphsAndCharts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\saman\\.nuget\\packages\\syncfusion.licensing\\22.2.9\\syncfusion.licensing.22.2.9.nupkg.sha512",
+    "C:\\Users\\saman\\.nuget\\packages\\syncfusion.sfchart.wpf\\22.2.9\\syncfusion.sfchart.wpf.22.2.9.nupkg.sha512"
+  ],
+  "logs": []
+}

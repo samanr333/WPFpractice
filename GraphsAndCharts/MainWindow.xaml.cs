@@ -1,10 +1,10 @@
 ﻿using System.Windows.Navigation;
 
-namespace RoutedEvents
+namespace GraphsAndCharts
 {
-    public partial class NavWindow : NavigationWindow
+    public partial class MainWindow : NavigationWindow
     {
-        public NavWindow()
+        public MainWindow()
         {
             InitializeComponent();
             Navigate(new NavPage());
