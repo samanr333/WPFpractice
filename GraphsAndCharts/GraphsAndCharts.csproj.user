@@ -13,6 +13,9 @@
     <Compile Update="Views\NavPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\PieChart.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\BarGraph.xaml">
@@ -22,6 +25,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\NavPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PieChart.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

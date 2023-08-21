@@ -28,6 +28,11 @@
                 Click="BarGraphClick"
                 Content="Bar Graph"
                 Style="{StaticResource PageButtonStyle}" />
+            <Button
+                Background="DarkBlue"
+                Click="PieChartClick"
+                Content="Pie Chart"
+                Style="{StaticResource PageButtonStyle}" />
         </WrapPanel>
     </Grid>
 </Page>

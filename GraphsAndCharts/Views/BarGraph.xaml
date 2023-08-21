@@ -25,10 +25,12 @@
                 <chart:ChartLegend />
             </chart:SfChart.Legend>
             <chart:ColumnSeries
+                Label="Data Structure and Algorithm"
                 ItemsSource="{Binding mark}"
                 XBindingPath="Name"
                 YBindingPath="DSAMarks" />
             <chart:ColumnSeries
+                Label="Compiler Design and Construction"
                 ItemsSource="{Binding mark}"
                 XBindingPath="Name"
                 YBindingPath="CDCMarks" />

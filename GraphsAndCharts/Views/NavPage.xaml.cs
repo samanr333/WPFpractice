@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using GraphsAndCharts.Views;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Navigation;
 
@@ -14,6 +15,12 @@ namespace GraphsAndCharts
         public void BarGraphClick(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new BarGraph());
+        }
+
+        // For Pie Chart
+        public void PieChartClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PieChart());
         }
     }
 }
