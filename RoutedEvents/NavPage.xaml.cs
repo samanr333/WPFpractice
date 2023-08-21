@@ -32,5 +32,11 @@ namespace RoutedEvents
         {
             NavigationService.Navigate(new ObjectLifetime());
         }
+
+        // For Property Change Event
+        public void PropertyChangeEventClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PropertyChange());
+        }
     }
 }

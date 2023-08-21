@@ -24,10 +24,7 @@ namespace RoutedEvents
             DisplayRectangle.Fill = Brushes.Green;
         }
 
-        private void Button_Unloaded(object sender, RoutedEventArgs e)
-        {
-
-        }
+   
         public void Page_Unloaded(object sender, System.EventArgs e)
         {
             DisplayRectangle.Fill = Brushes.Red;

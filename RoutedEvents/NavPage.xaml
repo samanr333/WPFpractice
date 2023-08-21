@@ -31,6 +31,11 @@
                 Click="ObjectlifetimeEventClick"
                 Content="Object Lifetime"
                 Style="{StaticResource PageButtonStyle}" />
+            <Button
+                Background="Crimson"
+                Click="PropertyChangeEventClick"
+                Content="Property Change"
+                Style="{StaticResource PageButtonStyle}" />
         </WrapPanel>
     </Grid>
 </Page>

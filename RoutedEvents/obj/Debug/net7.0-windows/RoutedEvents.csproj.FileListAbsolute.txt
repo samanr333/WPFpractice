@@ -25,3 +25,5 @@ C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\RoutedEvents\o
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\RoutedEvents\obj\Debug\net7.0-windows\NavPage.baml
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\RoutedEvents\obj\Debug\net7.0-windows\NavWindow.baml
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\RoutedEvents\obj\Debug\net7.0-windows\ObjectLifetime.baml
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\RoutedEvents\obj\Debug\net7.0-windows\PropertyChange.g.cs
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\RoutedEvents\obj\Debug\net7.0-windows\PropertyChange.baml
