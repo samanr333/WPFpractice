@@ -16,7 +16,7 @@
     <Grid Background="White">
         <chart:SfChart Background="Azure" Header="Marks Bar Graph">
             <chart:SfChart.PrimaryAxis>
-                <chart:CategoryAxis Background="Bisque" />
+                <chart:CategoryAxis Background="Gainsboro" />
             </chart:SfChart.PrimaryAxis>
             <chart:SfChart.SecondaryAxis>
                 <chart:NumericalAxis />
@@ -30,13 +30,21 @@
                 Label="Data Structure and Algorithm"
                 ShowTooltip="True"
                 XBindingPath="Name"
-                YBindingPath="DSAMarks" />
+                YBindingPath="DSAMarks">
+                <chart:ColumnSeries.AdornmentsInfo>
+                    <chart:ChartAdornmentInfo Background="IndianRed" ShowLabel="True" />
+                </chart:ColumnSeries.AdornmentsInfo>
+            </chart:ColumnSeries>
             <chart:ColumnSeries
                 ItemsSource="{Binding mark}"
                 Label="Compiler Design and Construction"
                 ShowTooltip="True"
                 XBindingPath="Name"
-                YBindingPath="CDCMarks" />
+                YBindingPath="CDCMarks">
+                <chart:ColumnSeries.AdornmentsInfo>
+                    <chart:ChartAdornmentInfo Background="Gold" ShowLabel="True" />
+                </chart:ColumnSeries.AdornmentsInfo>
+            </chart:ColumnSeries>
         </chart:SfChart>
     </Grid>
 </Page>

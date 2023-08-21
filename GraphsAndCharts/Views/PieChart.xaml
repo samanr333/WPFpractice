@@ -16,16 +16,20 @@
     </Page.DataContext>
 
     <Grid Background="White">
-        <chart:SfChart Header="Percentage Pie Chart" Background="Azure">
+        <chart:SfChart Background="Azure" Header="Percentage Pie Chart">
             <chart:SfChart.Legend>
                 <chart:ChartLegend Background="Pink" />
             </chart:SfChart.Legend>
             <chart:PieSeries
-                ShowTooltip="True"
+                EnableSmartLabels="True"
                 ItemsSource="{Binding percentage}"
+                ShowTooltip="True"
                 XBindingPath="Name"
-                YBindingPath="Value" />
-
+                YBindingPath="Value">
+                <chart:PieSeries.AdornmentsInfo>
+                    <chart:ChartAdornmentInfo FontSize="16" ShowLabel="True" />
+                </chart:PieSeries.AdornmentsInfo>
+            </chart:PieSeries>
         </chart:SfChart>
     </Grid>
 </Page>

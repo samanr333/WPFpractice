@@ -15,22 +15,30 @@
         <local1:MarksViewModel />
     </Page.DataContext>
     <Grid Background="White">
-        <chart:SfChart Header="Marks Line Graph" Background="Azure">
-            <chart:SfChart.Legend> 
-                <chart:ChartLegend Background="Pink"/>
+        <chart:SfChart Background="Azure" Header="Marks Line Graph">
+            <chart:SfChart.Legend>
+                <chart:ChartLegend Background="Pink" />
             </chart:SfChart.Legend>
             <chart:LineSeries
-                ShowTooltip="True"
                 ItemsSource="{Binding mark}"
                 Label="Data Structure and Algorithm"
-                XBindingPath="Name"
-                YBindingPath="DSAMarks" />
-            <chart:LineSeries
                 ShowTooltip="True"
+                XBindingPath="Name"
+                YBindingPath="DSAMarks">
+                <chart:LineSeries.AdornmentsInfo>
+                    <chart:ChartAdornmentInfo ShowLabel="True" />
+                </chart:LineSeries.AdornmentsInfo>
+            </chart:LineSeries>
+            <chart:LineSeries
                 ItemsSource="{Binding mark}"
                 Label="Compiler Design and Construction"
+                ShowTooltip="True"
                 XBindingPath="Name"
-                YBindingPath="CDCMarks" />
+                YBindingPath="CDCMarks">
+                <chart:LineSeries.AdornmentsInfo>
+                    <chart:ChartAdornmentInfo ShowLabel="True" />
+                </chart:LineSeries.AdornmentsInfo>
+            </chart:LineSeries>
         </chart:SfChart>
     </Grid>
 </Page>
