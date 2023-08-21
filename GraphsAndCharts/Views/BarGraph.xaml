@@ -28,11 +28,13 @@
             <chart:ColumnSeries
                 ItemsSource="{Binding mark}"
                 Label="Data Structure and Algorithm"
+                ShowTooltip="True"
                 XBindingPath="Name"
                 YBindingPath="DSAMarks" />
             <chart:ColumnSeries
                 ItemsSource="{Binding mark}"
                 Label="Compiler Design and Construction"
+                ShowTooltip="True"
                 XBindingPath="Name"
                 YBindingPath="CDCMarks" />
         </chart:SfChart>

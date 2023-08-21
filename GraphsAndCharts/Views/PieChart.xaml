@@ -16,11 +16,12 @@
     </Page.DataContext>
 
     <Grid Background="White">
-        <chart:SfChart Header="Percentage Pie Chart">
+        <chart:SfChart Header="Percentage Pie Chart" Background="Azure">
             <chart:SfChart.Legend>
-                <chart:ChartLegend />
+                <chart:ChartLegend Background="Pink" />
             </chart:SfChart.Legend>
             <chart:PieSeries
+                ShowTooltip="True"
                 ItemsSource="{Binding percentage}"
                 XBindingPath="Name"
                 YBindingPath="Value" />
