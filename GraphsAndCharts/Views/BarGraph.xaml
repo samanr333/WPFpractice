@@ -14,24 +14,25 @@
         <local:MarksViewModel />
     </Page.DataContext>
     <Grid Background="White">
-        <chart:SfChart Header="Marks Bar Graph">
+        <chart:SfChart Background="Azure" Header="Marks Bar Graph">
             <chart:SfChart.PrimaryAxis>
-                <chart:CategoryAxis />
+                <chart:CategoryAxis Background="Bisque" />
             </chart:SfChart.PrimaryAxis>
             <chart:SfChart.SecondaryAxis>
                 <chart:NumericalAxis />
             </chart:SfChart.SecondaryAxis>
+            <!--  Adding legend or description  -->
             <chart:SfChart.Legend>
-                <chart:ChartLegend />
+                <chart:ChartLegend Background="Pink" />
             </chart:SfChart.Legend>
             <chart:ColumnSeries
-                Label="Data Structure and Algorithm"
                 ItemsSource="{Binding mark}"
+                Label="Data Structure and Algorithm"
                 XBindingPath="Name"
                 YBindingPath="DSAMarks" />
             <chart:ColumnSeries
-                Label="Compiler Design and Construction"
                 ItemsSource="{Binding mark}"
+                Label="Compiler Design and Construction"
                 XBindingPath="Name"
                 YBindingPath="CDCMarks" />
         </chart:SfChart>
