@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\App.xaml
-41035189030
+5-1847325016
 
-121673261496
+13-1346789441
 20011003235
-Views\BarGraph.xaml;Views\MainWindow.xaml;Views\NavPage.xaml;Views\PieChart.xaml;
+Views\BarGraph.xaml;Views\LineGraph.xaml;Views\MainWindow.xaml;Views\NavPage.xaml;Views\PieChart.xaml;
 
 True
 

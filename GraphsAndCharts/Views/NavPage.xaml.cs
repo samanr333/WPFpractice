@@ -22,5 +22,11 @@ namespace GraphsAndCharts
         {
             NavigationService.Navigate(new PieChart());
         }
+
+        // For Line Graph
+        public void LineGraphClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new LineGraph());
+        }
     }
 }

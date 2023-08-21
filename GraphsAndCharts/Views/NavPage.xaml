@@ -33,6 +33,11 @@
                 Click="PieChartClick"
                 Content="Pie Chart"
                 Style="{StaticResource PageButtonStyle}" />
+            <Button
+                Background="IndianRed"
+                Click="LineGraphClick"
+                Content="Line Graph"
+                Style="{StaticResource PageButtonStyle}" />
         </WrapPanel>
     </Grid>
 </Page>
