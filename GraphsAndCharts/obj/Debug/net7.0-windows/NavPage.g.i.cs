@@ -53,7 +53,7 @@ namespace GraphsAndCharts {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GraphsAndCharts;component/navpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GraphsAndCharts;V1.0.0.0;component/navpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\NavPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

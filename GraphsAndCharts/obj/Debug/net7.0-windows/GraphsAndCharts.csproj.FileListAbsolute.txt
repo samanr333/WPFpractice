@@ -1,6 +1,4 @@
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\GraphsAndCharts.csproj.AssemblyReference.cache
-C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\MainWindow.g.cs
-C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\NavPage.g.cs
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\App.g.cs
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\GraphsAndCharts_MarkupCompile.cache
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\GraphsAndCharts_MarkupCompile.lref
@@ -11,10 +9,6 @@ C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndChart
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\bin\Debug\net7.0-windows\GraphsAndCharts.pdb
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\bin\Debug\net7.0-windows\Syncfusion.Licensing.dll
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\bin\Debug\net7.0-windows\Syncfusion.SfChart.WPF.dll
-C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\BarGraph.g.cs
-C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\MainWindow.baml
-C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\NavPage.baml
-C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\BarGraph.baml
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\GraphsAndCharts.g.resources
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\GraphsAndCharts.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\GraphsAndCharts.AssemblyInfoInputs.cache
@@ -26,3 +20,10 @@ C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndChart
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\GraphsAndCharts.pdb
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\GraphsAndCharts.genruntimeconfig.cache
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\ref\GraphsAndCharts.dll
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\Views\MainWindow.g.cs
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\Views\NavPage.g.cs
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\Views\BarGraph.g.cs
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\Views\BarGraph.baml
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\Views\MainWindow.baml
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\GraphsAndCharts\obj\Debug\net7.0-windows\Views\NavPage.baml
