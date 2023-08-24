@@ -114,7 +114,7 @@
                     Width="50"
                     Height="20"
                     Background="IndianRed"
-                    Command="{Binding AddPersonCommand}"
+                    Command="{Binding relaycommand}"
                     Content="ADD"
                     Foreground="White" />
             </Grid>
