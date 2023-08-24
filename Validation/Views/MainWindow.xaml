@@ -92,7 +92,7 @@
                 <TextBox
                     Grid.Row="2"
                     Style="{StaticResource TextBoxStyle}"
-                    Text="{Binding RollNo}" />
+                    Text="{Binding RollNo, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" />
                 <Label
                     Grid.Row="3"
                     Content="Email"
@@ -100,7 +100,7 @@
                 <TextBox
                     Grid.Row="3"
                     Style="{StaticResource TextBoxStyle}"
-                    Text="{Binding Email}" />
+                    Text="{Binding Email, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" />
                 <Label
                     Grid.Row="4"
                     Content="Password"
@@ -108,7 +108,7 @@
                 <TextBox
                     Grid.Row="4"
                     Style="{StaticResource TextBoxStyle}"
-                    Text="{Binding Password}" />
+                    Text="{Binding Password, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" />
                 <Button
                     Grid.Row="5"
                     Width="50"

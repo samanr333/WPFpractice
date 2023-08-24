@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Text.RegularExpressions;
 using System.Windows;
 using Validation.Command;
 using Validation.Model;
@@ -23,6 +24,7 @@ namespace Validation.ViewModel
         }
         public void OnExecute()
         {
+
             StudentModel student = new StudentModel { Name = Name, RollNo = (int)RollNo, Email = Email, Password = Password };
             students.Add(student);
         }
@@ -43,14 +45,62 @@ namespace Validation.ViewModel
                 case "Name":
                     error = ValidateStudentName();
                     break;
-
+                case "RollNo":
+                    error = ValidateStudentRollNo();
+                    break;
+                case "Email":
+                    error = ValidateStudentEmail();
+                    break;
+                
+                case "Password":
+                    error = ValidateStudentPassword();
+                    break;
             }
             return error;
 
         }
+
+        private string? ValidateStudentPassword()
+        {
+            if (String.IsNullOrWhiteSpace(Password))
+            {
+                return "Password cannot be empty";
+            }
+            return null;
+        }
+
+        private string? ValidateStudentEmail()
+        {
+            Regex emailRegex = new Regex(@"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?",
+                                        RegexOptions.Compiled | RegexOptions.IgnoreCase);
+           
+            if (string.IsNullOrWhiteSpace(Email))
+            {
+                return "Student email cannot be empty";
+            }
+            else if(!string.IsNullOrWhiteSpace(Email))
+            {
+                bool isMatch = Regex.IsMatch(Email, $"{emailRegex}");
+                if(!isMatch)
+                {
+                    return "Invalid Email";
+                }
+            }
+            return null;
+        }
+
+        private string? ValidateStudentRollNo()
+        {
+            if (string.IsNullOrWhiteSpace(RollNo.ToString()))
+            {
+                return "Student Roll no cannot be empty";
+            }
+            return null;
+        }
+
         private string? ValidateStudentName()
         {
-            if (String.IsNullOrWhiteSpace(Name))
+            if (string.IsNullOrWhiteSpace(Name))
             {
                 return "Student name cannot be empty.";
             }
