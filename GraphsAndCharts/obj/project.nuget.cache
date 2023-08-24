@@ -1,11 +1,30 @@
 {
   "version": 2,
-  "dgSpecHash": "FKrIdNjeD98HQ6xpZO8zQdZQtcn41zu0BJ33KI5F9xS4k10/zU/0AvtLoxC27qBeNEEVlT0HIMpTL21D5t+wAA==",
+  "dgSpecHash": "BgMyAM87aNf6o7nGa974T2Abr96JgxoHWPV8XCpStTVIDI8yE150SPvWpKjEL1mK6fUrRN2KeXkjzPUlsds9kA==",
   "success": true,
   "projectFilePath": "C:\\Users\\saman\\OneDrive\\Desktop\\Bajra Trainee\\Course\\.NET\\WpfApp2\\GraphsAndCharts\\GraphsAndCharts.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\saman\\.nuget\\packages\\epplus\\6.2.8\\epplus.6.2.8.nupkg.sha512",
+    "C:\\Users\\saman\\.nuget\\packages\\epplus.interfaces\\6.1.1\\epplus.interfaces.6.1.1.nupkg.sha512",
+    "C:\\Users\\saman\\.nuget\\packages\\epplus.system.drawing\\6.1.1\\epplus.system.drawing.6.1.1.nupkg.sha512",
+    "C:\\Users\\saman\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+    "C:\\Users\\saman\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\saman\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\7.0.0\\microsoft.extensions.configuration.fileextensions.7.0.0.nupkg.sha512",
+    "C:\\Users\\saman\\.nuget\\packages\\microsoft.extensions.configuration.json\\7.0.0\\microsoft.extensions.configuration.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\saman\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\7.0.0\\microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\saman\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\7.0.0\\microsoft.extensions.fileproviders.physical.7.0.0.nupkg.sha512",
+    "C:\\Users\\saman\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\7.0.0\\microsoft.extensions.filesystemglobbing.7.0.0.nupkg.sha512",
+    "C:\\Users\\saman\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\saman\\.nuget\\packages\\microsoft.io.recyclablememorystream\\2.2.1\\microsoft.io.recyclablememorystream.2.2.1.nupkg.sha512",
+    "C:\\Users\\saman\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "C:\\Users\\saman\\.nuget\\packages\\syncfusion.licensing\\22.2.9\\syncfusion.licensing.22.2.9.nupkg.sha512",
-    "C:\\Users\\saman\\.nuget\\packages\\syncfusion.sfchart.wpf\\22.2.9\\syncfusion.sfchart.wpf.22.2.9.nupkg.sha512"
+    "C:\\Users\\saman\\.nuget\\packages\\syncfusion.sfchart.wpf\\22.2.9\\syncfusion.sfchart.wpf.22.2.9.nupkg.sha512",
+    "C:\\Users\\saman\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
+    "C:\\Users\\saman\\.nuget\\packages\\system.formats.asn1\\7.0.0\\system.formats.asn1.7.0.0.nupkg.sha512",
+    "C:\\Users\\saman\\.nuget\\packages\\system.security.cryptography.pkcs\\7.0.2\\system.security.cryptography.pkcs.7.0.2.nupkg.sha512",
+    "C:\\Users\\saman\\.nuget\\packages\\system.text.encoding.codepages\\7.0.0\\system.text.encoding.codepages.7.0.0.nupkg.sha512",
+    "C:\\Users\\saman\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\saman\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

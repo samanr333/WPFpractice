@@ -27,7 +27,7 @@
                 XBindingPath="Name"
                 YBindingPath="Value">
                 <chart:PieSeries.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo FontSize="16" ShowLabel="True" />
+                    <chart:ChartAdornmentInfo FontSize="16" ShowLabel="True"/>
                 </chart:PieSeries.AdornmentsInfo>
             </chart:PieSeries>
         </chart:SfChart>

@@ -44,6 +44,10 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[6.2.8, )"
+            },
             "Syncfusion.SfChart.WPF": {
               "target": "Package",
               "version": "[22.2.9, )"
