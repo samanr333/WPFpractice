@@ -24,6 +24,13 @@
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="BorderBrush" Value="Black" />
         </Style>
+        <Style x:Key="ErrorLabelStyle" TargetType="Label">
+            <Setter Property="Margin" Value="20,0,0,0" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="FontSize" Value="10" />
+            <Setter Property="Foreground" Value="Red" />
+        </Style>
     </Window.Resources>
     <Window.DataContext>
         <local1:StudentViewModel />
@@ -81,7 +88,12 @@
                     Grid.Row="1"
                     Content="Name"
                     Style="{StaticResource LabelStyle}" />
+                <Label
+                    Grid.Row="1"
+                    Content="{Binding ElementName=NameTextBox, Path=(Validation.Errors).CurrentItem.ErrorContent}"
+                    Style="{StaticResource ErrorLabelStyle}" />
                 <TextBox
+                    x:Name="NameTextBox"
                     Grid.Row="1"
                     Style="{StaticResource TextBoxStyle}"
                     Text="{Binding Name, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" />
@@ -89,7 +101,12 @@
                     Grid.Row="2"
                     Content="Roll No"
                     Style="{StaticResource LabelStyle}" />
+                <Label
+                    Grid.Row="2"
+                    Content="{Binding ElementName=RollnoTextBox, Path=(Validation.Errors).CurrentItem.ErrorContent}"
+                    Style="{StaticResource ErrorLabelStyle}" />
                 <TextBox
+                    x:Name="RollnoTextBox"
                     Grid.Row="2"
                     Style="{StaticResource TextBoxStyle}"
                     Text="{Binding RollNo, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" />
@@ -97,7 +114,12 @@
                     Grid.Row="3"
                     Content="Email"
                     Style="{StaticResource LabelStyle}" />
+                <Label
+                    Grid.Row="3"
+                    Content="{Binding ElementName=EmailTextBox, Path=(Validation.Errors).CurrentItem.ErrorContent}"
+                    Style="{StaticResource ErrorLabelStyle}" />
                 <TextBox
+                    x:Name="EmailTextBox"
                     Grid.Row="3"
                     Style="{StaticResource TextBoxStyle}"
                     Text="{Binding Email, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" />
@@ -105,7 +127,12 @@
                     Grid.Row="4"
                     Content="Password"
                     Style="{StaticResource LabelStyle}" />
+                <Label
+                    Grid.Row="4"
+                    Content="{Binding ElementName=PasswordTextBox, Path=(Validation.Errors).CurrentItem.ErrorContent}"
+                    Style="{StaticResource ErrorLabelStyle}" />
                 <TextBox
+                    x:Name="PasswordTextBox"
                     Grid.Row="4"
                     Style="{StaticResource TextBoxStyle}"
                     Text="{Binding Password, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" />

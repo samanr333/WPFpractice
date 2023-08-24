@@ -78,7 +78,7 @@ namespace Validation.ViewModel
                 bool isPassMatch = Regex.IsMatch(Password, $"{passwordRegex}");
                 if (!isPassMatch)
                 {
-                    return "Invalid Passowrd";
+                    return "Invalid Password";
                 }
             }
             return null;
@@ -118,7 +118,7 @@ namespace Validation.ViewModel
         {
             if (string.IsNullOrWhiteSpace(Name))
             {
-                return "Student name cannot be empty.";
+                return "Student name cannot be empty";
             }
             return null;
         }
