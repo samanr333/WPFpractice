@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
 using System.Windows;
 using Validation.Command;
@@ -11,6 +10,7 @@ namespace Validation.ViewModel
 {
     public class StudentViewModel : IDataErrorInfo
     {
+        public string? Error => null;
         public string? Name { get; set; }
         public int? RollNo { get; set; }
         public string? Email { get; set; }
@@ -24,11 +24,17 @@ namespace Validation.ViewModel
         }
         public void OnExecute()
         {
+            if (this["Name"] != null || this["RollNo"] != null || this["Email"] != null || this["Password"] != null)
+            {
+                MessageBox.Show("Please enter all fields correctly");
+            }
 
-            StudentModel student = new StudentModel { Name = Name, RollNo = (int)RollNo, Email = Email, Password = Password };
-            students.Add(student);
+            else if (Error == null)
+            {
+                StudentModel student = new StudentModel { Name = Name, RollNo = (int)RollNo, Email = Email, Password = Password };
+                students.Add(student);
+            }
         }
-        public string Error => null;
         public string this[string propertyName]
         {
             get
@@ -36,7 +42,6 @@ namespace Validation.ViewModel
                 return GetValidationError(propertyName);
             }
         }
-
         private string GetValidationError(string propertyName)
         {
             string error = null;
@@ -51,7 +56,7 @@ namespace Validation.ViewModel
                 case "Email":
                     error = ValidateStudentEmail();
                     break;
-                
+
                 case "Password":
                     error = ValidateStudentPassword();
                     break;
