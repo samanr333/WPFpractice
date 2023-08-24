@@ -62,15 +62,26 @@ namespace Validation.ViewModel
 
         private string? ValidateStudentPassword()
         {
-            if (String.IsNullOrWhiteSpace(Password))
+            // Regex Password Validation
+            Regex passwordRegex = new Regex(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^a-zA-Z0-9]).{8,16}$");
+            if (string.IsNullOrWhiteSpace(Password))
             {
                 return "Password cannot be empty";
+            }
+            else if(!string.IsNullOrWhiteSpace(Password))
+            {
+                bool isPassMatch = Regex.IsMatch(Password, $"{passwordRegex}");
+                if (!isPassMatch)
+                {
+                    return "Invalid Passowrd";
+                }
             }
             return null;
         }
 
         private string? ValidateStudentEmail()
         {
+            // Regex Email Validation
             Regex emailRegex = new Regex(@"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?",
                                         RegexOptions.Compiled | RegexOptions.IgnoreCase);
            
@@ -80,8 +91,8 @@ namespace Validation.ViewModel
             }
             else if(!string.IsNullOrWhiteSpace(Email))
             {
-                bool isMatch = Regex.IsMatch(Email, $"{emailRegex}");
-                if(!isMatch)
+                bool isEmailMatch = Regex.IsMatch(Email, $"{emailRegex}");
+                if(!isEmailMatch)
                 {
                     return "Invalid Email";
                 }
