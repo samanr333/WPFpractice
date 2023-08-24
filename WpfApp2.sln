@@ -5,7 +5,9 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoutedEvents", "RoutedEvents\RoutedEvents.csproj", "{8D448384-5CB7-4BC1-A4B6-C3124F8BFEE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphsAndCharts", "GraphsAndCharts\GraphsAndCharts.csproj", "{1312447D-8410-4835-92E3-E499656DC145}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphsAndCharts", "GraphsAndCharts\GraphsAndCharts.csproj", "{1312447D-8410-4835-92E3-E499656DC145}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validation", "Validation\Validation.csproj", "{C504A0B1-9350-4415-9C5B-04023E48063C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1312447D-8410-4835-92E3-E499656DC145}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1312447D-8410-4835-92E3-E499656DC145}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1312447D-8410-4835-92E3-E499656DC145}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C504A0B1-9350-4415-9C5B-04023E48063C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C504A0B1-9350-4415-9C5B-04023E48063C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C504A0B1-9350-4415-9C5B-04023E48063C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C504A0B1-9350-4415-9C5B-04023E48063C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
