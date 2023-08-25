@@ -19,3 +19,6 @@ C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\Splash\obj\Deb
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\Splash\obj\Debug\net7.0-windows\Splash.pdb
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\Splash\obj\Debug\net7.0-windows\Splash.genruntimeconfig.cache
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\Splash\obj\Debug\net7.0-windows\ref\Splash.dll
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\Splash\obj\Debug\net7.0-windows\Themes\Dark.baml
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\Splash\obj\Debug\net7.0-windows\Themes\Light.baml
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\Splash\obj\Debug\net7.0-windows\App.baml
