@@ -8,18 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="avengers.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <SplashScreen Include="avengers.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </SplashScreen>
+    <None Remove="img.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Model\" />
     <Folder Include="ViewModel\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SplashScreen Include="img.jpg" />
   </ItemGroup>
 
 </Project>

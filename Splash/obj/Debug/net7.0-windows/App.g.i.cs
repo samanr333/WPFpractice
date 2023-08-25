@@ -62,7 +62,7 @@ namespace Splash {
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.9.0")]
         public static void Main() {
-            SplashScreen splashScreen = new SplashScreen("avengers.png");
+            SplashScreen splashScreen = new SplashScreen("img.jpg");
             splashScreen.Show(true);
             Splash.App app = new Splash.App();
             app.InitializeComponent();
