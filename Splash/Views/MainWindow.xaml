@@ -19,15 +19,17 @@
                 Foreground="{DynamicResource Text}"
                 Text="Change my theme" />
             <RadioButton
+                x:Name="DarkTheme"
                 Canvas.Left="200"
                 Canvas.Top="50"
-                Checked="DarkTheme"
+                Checked="ChangeTheme"
                 Content="Dark"
                 Foreground="{DynamicResource Text}" />
             <RadioButton
+                x:Name="LightTheme"
                 Canvas.Left="115"
                 Canvas.Top="50"
-                Checked="LightTheme"
+                Checked="ChangeTheme"
                 Content="Light"
                 Foreground="{DynamicResource Text}"
                 IsChecked="True" />

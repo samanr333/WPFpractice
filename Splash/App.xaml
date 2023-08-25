@@ -5,6 +5,6 @@
     xmlns:local="clr-namespace:Splash"
     StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
-        <ResourceDictionary Source="Themes/Light.xaml" />
+        
     </Application.Resources>
 </Application>

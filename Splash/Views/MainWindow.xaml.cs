@@ -1,17 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Splash
 {
@@ -23,6 +11,24 @@ namespace Splash
         public MainWindow()
         {
             InitializeComponent();
+        }
+        public void ChangeTheme(object sender,  RoutedEventArgs e)
+        {
+            if(DarkTheme.IsChecked == true)
+            {
+                Uri resourceUri = new Uri("Themes/Dark.xaml", UriKind.Relative);
+                ResourceDictionary darkTheme = new ResourceDictionary();
+                darkTheme.Source = resourceUri;
+                Application.Current.Resources.MergedDictionaries.Add(darkTheme);
+            }
+            else if(DarkTheme.IsChecked == false)
+            {
+                Uri resourceUri = new Uri("Themes/Light.xaml", UriKind.Relative);
+                ResourceDictionary lightTheme = new ResourceDictionary();
+                lightTheme.Source = resourceUri;
+                Application.Current.Resources.MergedDictionaries.Add(lightTheme);
+            }
+
         }
     }
 }
