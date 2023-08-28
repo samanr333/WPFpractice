@@ -37,7 +37,7 @@ namespace LifeCycle
                 MessageBox.Show("Saving Data");
             }
         }
-
+        
         private void MainWindowUnloaded(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Window Unloading");
@@ -47,6 +47,7 @@ namespace LifeCycle
         {
             SizeButton.Content = "Button Clicked!";
             Width += 100;
+            Height += 100;
         }
     }
 }

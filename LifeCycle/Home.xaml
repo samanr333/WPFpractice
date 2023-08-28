@@ -26,6 +26,7 @@
             Width="100"
             Height="30"
             VerticalAlignment="Top"
+            Click="SecondClick"
             Content="Second Page" />
     </Grid>
 </UserControl>
