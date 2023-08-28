@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Windows;
 
 namespace LifeCycle
@@ -12,12 +11,12 @@ namespace LifeCycle
             Loaded += MainWindowLoaded;
             SizeChanged += MainWindowSizeChanged;
             Closing += MainWindowClose;
-            MyFrame.Navigate(new Home());
         }
 
         private void MainWindowLoaded(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Window loaded");
+            MyFrame.Navigate(new Home());
         }
 
         private void MainWindowSizeChanged(object sender, SizeChangedEventArgs e)
@@ -42,10 +41,8 @@ namespace LifeCycle
         {
             MessageBox.Show("Window Unloading");
         }
-
         private void ButtonClick(object sender, RoutedEventArgs e)
         {
-            SizeButton.Content = "Button Clicked!";
             Width += 100;
             Height += 100;
         }
