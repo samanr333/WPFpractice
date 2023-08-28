@@ -61,7 +61,7 @@ namespace LifeCycle {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/LifeCycle;V1.0.0.0;component/second.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/LifeCycle;component/second.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Second.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

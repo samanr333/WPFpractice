@@ -21,7 +21,7 @@ namespace LifeCycle
 
         private void MainWindowSizeChanged(object sender, SizeChangedEventArgs e)
         {
-            MessageBox.Show("Size of window has changed");
+            MessageBox.Show("Height of window has changed");
         }
 
         private void MainWindowClose(object sender, CancelEventArgs e)
@@ -41,10 +41,13 @@ namespace LifeCycle
         {
             MessageBox.Show("Window Unloading");
         }
-        private void ButtonClick(object sender, RoutedEventArgs e)
+        public void SizeClick(object sender, RoutedEventArgs e)
         {
-            Width += 100;
-            Height += 100;
+            Modal modal = new Modal();
+            if (modal.ShowDialog() == true)
+            {
+                Height += 100;
+            }  
         }
     }
 }

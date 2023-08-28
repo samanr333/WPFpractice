@@ -23,3 +23,5 @@ C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\LifeCycle\obj\
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\LifeCycle\obj\Debug\net7.0-windows\Home.baml
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\LifeCycle\obj\Debug\net7.0-windows\Second.g.cs
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\LifeCycle\obj\Debug\net7.0-windows\Second.baml
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\LifeCycle\obj\Debug\net7.0-windows\Modal.g.cs
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\LifeCycle\obj\Debug\net7.0-windows\Modal.baml

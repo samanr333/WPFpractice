@@ -20,7 +20,7 @@
             Grid.Row="1"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            Click="ButtonClick"
+            Click="SizeClick"
             Content="Change size" />
     </Grid>
 </Window>
