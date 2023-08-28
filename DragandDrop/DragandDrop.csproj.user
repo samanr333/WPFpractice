@@ -7,10 +7,18 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\NavPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="Views\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\ImageDragandDrop.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NavPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

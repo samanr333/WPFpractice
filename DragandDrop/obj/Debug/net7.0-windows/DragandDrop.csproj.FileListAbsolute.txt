@@ -21,3 +21,6 @@ C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\DragandDrop\ob
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\DragandDrop\obj\Debug\net7.0-windows\Views\MainWindow.g.cs
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\DragandDrop\obj\Debug\net7.0-windows\Views\ImageDragandDrop.baml
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\DragandDrop\obj\Debug\net7.0-windows\Views\MainWindow.baml
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\DragandDrop\obj\Debug\net7.0-windows\Views\NavPage.g.cs
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\DragandDrop\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\DragandDrop\obj\Debug\net7.0-windows\Views\NavPage.baml
