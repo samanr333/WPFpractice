@@ -10,52 +10,8 @@
     Width="800"
     Height="450"
     mc:Ignorable="d">
-    <Window.DataContext>
-        <local1:ToDoViewModel />
-    </Window.DataContext>
+    
     <Grid Background="Gray">
-        <Grid Margin="20" Background="IndianRed">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
-
-            <!--  To Do List  -->
-            <ListView
-                x:Name="ToDoListView"
-                Grid.Column="0"
-                Margin="10"
-                AllowDrop="True"
-                Drop="ToDoListView_Drop"
-                ItemsSource="{Binding ToDoList}"
-                PreviewMouseLeftButtonDown="ToDoElementMouseDown">
-                <ListView.View>
-                    <GridView>
-                        <GridViewColumn
-                            Width="auto"
-                            DisplayMemberBinding="{Binding Path=ToDoElement}"
-                            Header="To Do" />
-                    </GridView>
-                </ListView.View>
-            </ListView>
-
-            <!--  Done List  -->
-            <ListView
-                x:Name="DoneListView"
-                ItemsSource="{Binding DoneList}"
-                Grid.Column="1"
-                Margin="10"
-                AllowDrop="True"
-                Drop="DoneListView_Drop">
-                <ListView.View>
-                    <GridView>
-                        <GridViewColumn
-                            Width="auto"
-                            DisplayMemberBinding="{Binding Path=ToDoElement}"
-                            Header="Done" />
-                    </GridView>
-                </ListView.View>
-            </ListView>
-        </Grid>
+        
     </Grid>
 </Window>
