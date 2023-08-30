@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LifeCycle", "LifeCycle\Life
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFcrud", "EFcrud\EFcrud.csproj", "{B9911A3A-4931-4128-9C60-0AFB14E2B2C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notification", "Notification\Notification.csproj", "{D9549A56-F58A-48A4-BB5C-551BB53A9D82}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,10 +51,6 @@ Global
 		{B9911A3A-4931-4128-9C60-0AFB14E2B2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9911A3A-4931-4128-9C60-0AFB14E2B2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9911A3A-4931-4128-9C60-0AFB14E2B2C0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D9549A56-F58A-48A4-BB5C-551BB53A9D82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D9549A56-F58A-48A4-BB5C-551BB53A9D82}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D9549A56-F58A-48A4-BB5C-551BB53A9D82}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D9549A56-F58A-48A4-BB5C-551BB53A9D82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

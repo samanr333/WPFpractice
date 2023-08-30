@@ -584,6 +584,42 @@
           }
         }
       },
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "Notification.Wpf/7.0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.39",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net7.0-windows7.0/Notification.Wpf.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows7.0/Notification.Wpf.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -1006,6 +1042,15 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
       "System.Windows.Extensions/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -1026,15 +1071,6 @@
             "assetType": "runtime",
             "rid": "win"
           }
-        }
-      },
-      "ToastNotifications/2.5.1": {
-        "type": "package",
-        "compile": {
-          "lib/net40/ToastNotifications.dll": {}
-        },
-        "runtime": {
-          "lib/net40/ToastNotifications.dll": {}
         }
       }
     }
@@ -1909,6 +1945,69 @@
         "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
+      "sha512": "8PZKqw9QOcu42xk8puY4P1+EXHL9YGOR9b7qhaYx5cILHul456H073tj99vyPcCt0W0781T9RwHqkx507ZyUpQ==",
+      "type": "package",
+      "path": "microsoft.xaml.behaviors.wpf/1.1.39",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Design/Microsoft.Xaml.Behaviors.Design.dll",
+        "lib/net45/Microsoft.Xaml.Behaviors.dll",
+        "lib/net45/Microsoft.Xaml.Behaviors.pdb",
+        "lib/net45/Microsoft.Xaml.Behaviors.xml",
+        "lib/net5.0-windows7.0/Design/Microsoft.Xaml.Behaviors.DesignTools.dll",
+        "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll",
+        "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.pdb",
+        "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.xml",
+        "lib/netcoreapp3.1/Design/Microsoft.Xaml.Behaviors.DesignTools.dll",
+        "lib/netcoreapp3.1/Microsoft.Xaml.Behaviors.dll",
+        "lib/netcoreapp3.1/Microsoft.Xaml.Behaviors.pdb",
+        "lib/netcoreapp3.1/Microsoft.Xaml.Behaviors.xml",
+        "microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+        "microsoft.xaml.behaviors.wpf.nuspec",
+        "tools/Install.ps1"
+      ]
+    },
+    "Notification.Wpf/7.0.0.2": {
+      "sha512": "ym7N1fPRgvS6yD/UYNgLfW5X1BViqYGDRnhnWU5kAW7GYbJqW5dyjjLwbNCOh0W9FIf2afyrdmgmjxbNVE7gOw==",
+      "type": "package",
+      "path": "notification.wpf/7.0.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "Notification.Wpf.xml",
+        "icon.png",
+        "lib/net46/Notification.Wpf.dll",
+        "lib/net46/Notification.Wpf.pdb",
+        "lib/net46/Notification.Wpf.xml",
+        "lib/net461/Notification.Wpf.dll",
+        "lib/net461/Notification.Wpf.pdb",
+        "lib/net461/Notification.Wpf.xml",
+        "lib/net47/Notification.Wpf.dll",
+        "lib/net47/Notification.Wpf.pdb",
+        "lib/net47/Notification.Wpf.xml",
+        "lib/net48/Notification.Wpf.dll",
+        "lib/net48/Notification.Wpf.pdb",
+        "lib/net48/Notification.Wpf.xml",
+        "lib/net5.0-windows7.0/Notification.Wpf.dll",
+        "lib/net5.0-windows7.0/Notification.Wpf.pdb",
+        "lib/net5.0-windows7.0/Notification.Wpf.xml",
+        "lib/net6.0-windows7.0/Notification.Wpf.dll",
+        "lib/net6.0-windows7.0/Notification.Wpf.pdb",
+        "lib/net6.0-windows7.0/Notification.Wpf.xml",
+        "lib/net7.0-windows7.0/Notification.Wpf.dll",
+        "lib/net7.0-windows7.0/Notification.Wpf.pdb",
+        "lib/net7.0-windows7.0/Notification.Wpf.xml",
+        "lib/netcoreapp3.1/Notification.Wpf.dll",
+        "lib/netcoreapp3.1/Notification.Wpf.pdb",
+        "lib/netcoreapp3.1/Notification.Wpf.xml",
+        "notification.wpf.7.0.0.2.nupkg.sha512",
+        "notification.wpf.nuspec"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -3159,6 +3258,50 @@
         "version.txt"
       ]
     },
+    "System.ValueTuple/4.5.0": {
+      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Windows.Extensions/5.0.0": {
       "sha512": "c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
       "type": "package",
@@ -3180,26 +3323,13 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "ToastNotifications/2.5.1": {
-      "sha512": "0ZBWG0FCPafwbIzNhjWgC0GEOyk51GF3rYWrh5QJ61ZxDEoLgdDsEUt8HMxYN7lRLVt/mWhtgdbe4OmhXfwtkA==",
-      "type": "package",
-      "path": "toastnotifications/2.5.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/ToastNotifications.dll",
-        "readme.txt",
-        "toastnotifications.2.5.1.nupkg.sha512",
-        "toastnotifications.nuspec"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
       "Microsoft.EntityFrameworkCore >= 7.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.10",
-      "ToastNotifications >= 2.5.1"
+      "Notification.Wpf >= 7.0.0.2"
     ]
   },
   "packageFolders": {
@@ -3254,9 +3384,9 @@
             "target": "Package",
             "version": "[7.0.10, )"
           },
-          "ToastNotifications": {
+          "Notification.Wpf": {
             "target": "Package",
-            "version": "[2.5.1, )"
+            "version": "[7.0.0.2, )"
           }
         },
         "imports": [
@@ -3281,17 +3411,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'ToastNotifications 2.5.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "ToastNotifications",
-      "targetGraphs": [
-        "net7.0-windows7.0"
-      ]
-    }
-  ]
+  }
 }

@@ -123,16 +123,19 @@
                         Background="Blue"
                        Command="{Binding updatecommand}"
                         Content="Update"
+                        CommandParameter="Update"
                         Style="{StaticResource ButtonStyle}" />
                     <Button
                         Background="IndianRed"
                         Command="{Binding removecommand}"
                         Content="Remove"
+                        CommandParameter="Remove"
                         Style="{StaticResource ButtonStyle}" />
                     <Button
                         Background="Purple"
                         Command="{Binding resetcommand}"
                         Content="Reset"
+                        CommandParameter="Reset"
                         Style="{StaticResource ButtonStyle}" />
                 </WrapPanel>
             </Grid>

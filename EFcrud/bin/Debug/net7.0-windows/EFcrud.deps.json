@@ -10,7 +10,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10",
-          "ToastNotifications": "2.5.1"
+          "Notification.Wpf": "7.0.0.2"
         },
         "runtime": {
           "EFcrud.dll": {}
@@ -381,6 +381,26 @@
           "Microsoft.NETCore.Platforms": "5.0.0"
         }
       },
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
+        "runtime": {
+          "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.39.4716"
+          }
+        }
+      },
+      "Notification.Wpf/7.0.0.2": {
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.39",
+          "System.ValueTuple": "4.5.0"
+        },
+        "runtime": {
+          "lib/net7.0-windows7.0/Notification.Wpf.dll": {
+            "assemblyVersion": "7.0.0.2",
+            "fileVersion": "7.0.0.2"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {},
       "System.Configuration.ConfigurationManager/5.0.0": {
         "dependencies": {
@@ -528,17 +548,10 @@
         }
       },
       "System.Threading.Tasks.Extensions/4.5.4": {},
+      "System.ValueTuple/4.5.0": {},
       "System.Windows.Extensions/5.0.0": {
         "dependencies": {
           "System.Drawing.Common": "5.0.0"
-        }
-      },
-      "ToastNotifications/2.5.1": {
-        "runtime": {
-          "lib/net40/ToastNotifications.dll": {
-            "assemblyVersion": "2.5.1.0",
-            "fileVersion": "2.5.1.0"
-          }
         }
       }
     }
@@ -780,6 +793,20 @@
       "path": "microsoft.win32.systemevents/5.0.0",
       "hashPath": "microsoft.win32.systemevents.5.0.0.nupkg.sha512"
     },
+    "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8PZKqw9QOcu42xk8puY4P1+EXHL9YGOR9b7qhaYx5cILHul456H073tj99vyPcCt0W0781T9RwHqkx507ZyUpQ==",
+      "path": "microsoft.xaml.behaviors.wpf/1.1.39",
+      "hashPath": "microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+    },
+    "Notification.Wpf/7.0.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ym7N1fPRgvS6yD/UYNgLfW5X1BViqYGDRnhnWU5kAW7GYbJqW5dyjjLwbNCOh0W9FIf2afyrdmgmjxbNVE7gOw==",
+      "path": "notification.wpf/7.0.0.2",
+      "hashPath": "notification.wpf.7.0.0.2.nupkg.sha512"
+    },
     "System.Buffers/4.5.1": {
       "type": "package",
       "serviceable": true,
@@ -969,19 +996,19 @@
       "path": "system.threading.tasks.extensions/4.5.4",
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
     },
+    "System.ValueTuple/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "path": "system.valuetuple/4.5.0",
+      "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
+    },
     "System.Windows.Extensions/5.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
-    },
-    "ToastNotifications/2.5.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-0ZBWG0FCPafwbIzNhjWgC0GEOyk51GF3rYWrh5QJ61ZxDEoLgdDsEUt8HMxYN7lRLVt/mWhtgdbe4OmhXfwtkA==",
-      "path": "toastnotifications/2.5.1",
-      "hashPath": "toastnotifications.2.5.1.nupkg.sha512"
     }
   }
 }

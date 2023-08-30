@@ -1,6 +1,6 @@
 ﻿using EFcrud.Command;
 using EFcrud.Model;
-using System;
+using EFcrud.Services;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
@@ -13,6 +13,7 @@ namespace EFcrud.ViewModel
     {
         public AppDbContext dbContext;
         public StudentModel Student { get; set; }
+        NotificationClass notificationServices {  get; set; }
         
         public AddCommand addcommand { get; set; }
         public RemoveCommand removecommand { get; set; }
@@ -60,7 +61,12 @@ namespace EFcrud.ViewModel
                 dbContext.Studenttable.Add(students);
                 dbContext.SaveChanges();
                 StudentsList.Add(students);
-                MessageBox.Show("Student details added successfully");
+                //MessageBox.Show("Student details added successfully");
+
+                // Add notification
+                notificationServices = new NotificationClass();
+                notificationServices.ShowAddNotification(Student.Name,Student.Email, Student.RollNo);
+
             }
             else
             {
@@ -77,6 +83,11 @@ namespace EFcrud.ViewModel
                 dbContext.SaveChanges();
                 StudentsList.Remove(SelectedStudent);
                 MessageBox.Show("Student details removed successfully");
+                LoadStudent();
+                Reset();
+                // Remove notification
+                notificationServices = new NotificationClass();
+                notificationServices.ShowRemoveNotification();
             }
             else
             {
@@ -107,10 +118,15 @@ namespace EFcrud.ViewModel
             dbContext.Studenttable.Update(student);
             dbContext.SaveChanges();
             LoadStudent();
+            // Update notification
+            notificationServices = new NotificationClass();
+            notificationServices.ShowUpdateNotification(Student.Name, Student.Email, Student.RollNo);
             Reset();
             MessageBox.Show("Item Updated Successfully");
-
         }
+
+        // Notification
+   
 
         public event PropertyChangedEventHandler PropertyChanged;
 
