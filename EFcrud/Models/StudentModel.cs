@@ -9,10 +9,10 @@ namespace EFcrud.Model
     public class StudentModel:INotifyPropertyChanged
     {
         [Key]
-        private int _id { get; set; }
-        private string _name { get; set; }
-        private int _rollno { get; set; }
-        private string _email { get; set; }
+        private int _id;
+        private string _name;
+        private int _rollno;
+        private string _email;
         public int Id
         {
             get => _id;

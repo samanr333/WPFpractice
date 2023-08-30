@@ -45,9 +45,9 @@
                 Grid.ColumnSpan="2"
                 Width="500"
                 Margin="20"
-                SelectedItem="{Binding SelectedStudent}"
                 BorderBrush="Black"
-                ItemsSource="{Binding studentsList}">
+                ItemsSource="{Binding StudentsList}"
+                SelectedItem="{Binding SelectedStudent}">
                 <ListView.View>
                     <GridView>
                         <GridViewColumn
@@ -121,7 +121,7 @@
                         Style="{StaticResource ButtonStyle}" />
                     <Button
                         Background="Blue"
-                        Command="{Binding relaycommand}"
+                       Command="{Binding updatecommand}"
                         Content="Update"
                         Style="{StaticResource ButtonStyle}" />
                     <Button

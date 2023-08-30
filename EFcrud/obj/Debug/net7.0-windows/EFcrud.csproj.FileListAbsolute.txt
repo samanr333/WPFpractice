@@ -57,3 +57,4 @@ C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\EFcrud\bin\Deb
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\EFcrud\bin\Debug\net7.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\EFcrud\bin\Debug\net7.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\EFcrud\obj\Debug\net7.0-windows\EFcrud.csproj.CopyComplete
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\EFcrud\bin\Debug\net7.0-windows\ToastNotifications.dll

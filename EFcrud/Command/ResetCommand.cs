@@ -1,9 +1,10 @@
 ﻿using EFcrud.ViewModel;
 using System;
+using System.Windows.Input;
 
 namespace EFcrud.Command
 {
-    public class ResetCommand
+    public class ResetCommand:ICommand
     {
         StudentViewModel ResetButtonClick;
         public ResetCommand(StudentViewModel studentViewModel)

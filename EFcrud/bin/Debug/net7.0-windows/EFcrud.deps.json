@@ -9,7 +9,8 @@
       "EFcrud/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.10",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10"
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10",
+          "ToastNotifications": "2.5.1"
         },
         "runtime": {
           "EFcrud.dll": {}
@@ -531,6 +532,14 @@
         "dependencies": {
           "System.Drawing.Common": "5.0.0"
         }
+      },
+      "ToastNotifications/2.5.1": {
+        "runtime": {
+          "lib/net40/ToastNotifications.dll": {
+            "assemblyVersion": "2.5.1.0",
+            "fileVersion": "2.5.1.0"
+          }
+        }
       }
     }
   },
@@ -966,6 +975,13 @@
       "sha512": "sha512-c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
+    },
+    "ToastNotifications/2.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0ZBWG0FCPafwbIzNhjWgC0GEOyk51GF3rYWrh5QJ61ZxDEoLgdDsEUt8HMxYN7lRLVt/mWhtgdbe4OmhXfwtkA==",
+      "path": "toastnotifications/2.5.1",
+      "hashPath": "toastnotifications.2.5.1.nupkg.sha512"
     }
   }
 }

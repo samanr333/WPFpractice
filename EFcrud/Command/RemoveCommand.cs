@@ -21,7 +21,7 @@ namespace EFcrud.Command
 
         public void Execute(object? parameter)
         {
-            RemoveButtonClick.Remove(parameter);
+            RemoveButtonClick.Remove();
         }
     }
 }
