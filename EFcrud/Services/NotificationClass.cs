@@ -9,7 +9,7 @@ namespace EFcrud.Services
         {
             var content = new NotificationContent
             {
-                Title = "New Detail Recorded",
+                Title = "New Details Added",
                 Message = $"Name: {Name} \nEmail: {Email} \nRoll No: {RollNo}",
                 Type = NotificationType.Success
             };
@@ -19,7 +19,7 @@ namespace EFcrud.Services
         {
             var content = new NotificationContent
             {
-                Title = "Detail Removed",
+                Title = "Details Removed",
                 Type = NotificationType.Success
             };
             _notificationManager.Show(content);
@@ -28,7 +28,7 @@ namespace EFcrud.Services
         {
             var content = new NotificationContent
             {
-                Title = "Detail Updated \nUpdated info:",
+                Title = "Details Updated \nUpdated info:",
                 Message = $"Name: {Name} \nEmail: {Email} \nRoll No: {RollNo}",
                 Type = NotificationType.Success
             };
