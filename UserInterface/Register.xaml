@@ -53,24 +53,8 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <Border
-            BorderThickness="2"
-            CornerRadius="10"
-            Opacity="0.95">
-            <Border.BorderBrush>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <GradientStop Offset="0" Color="Green" />
-                    <GradientStop Offset="0.75" Color="#DA34AE" />
-                    <GradientStop Offset="1" Color="#8A16C1" />
-                </LinearGradientBrush>
-            </Border.BorderBrush>
-            <Border.Background>
-                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-                    <GradientStop Offset="0" Color="Peru" />
-                    <GradientStop Offset="1" Color="#1B1448" />
-                </LinearGradientBrush>
-            </Border.Background>
-        </Border>
+        <Border Style="{StaticResource CustomBorderStyle}" />
+
         <StackPanel
             Grid.Row="1"
             Width="220"
@@ -157,8 +141,6 @@
                 <Button
                     Margin="8,0,0,0"
                     Background="#322c5a"
-                    Opacity=".98"
-                    OpacityMask="Purple"
                     BorderThickness="0"
                     Click="LoginClick"
                     Content="Login"
@@ -166,7 +148,9 @@
                     FontFamily="Montserrat"
                     FontSize="10"
                     FontWeight="Medium"
-                    Foreground="White">
+                    Foreground="White"
+                    Opacity=".98"
+                    OpacityMask="Purple">
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
                             <Border
