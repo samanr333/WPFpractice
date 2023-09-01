@@ -4,12 +4,24 @@
     xmlns:local="clr-namespace:CustomControls.Controller">
 
     <Style BasedOn="{StaticResource {x:Type TextBox}}" TargetType="{x:Type local:TextBoxControl}">
-        <Setter Property="Background" Value="LightCoral" />
         <Setter Property="Width" Value="200" />
         <Setter Property="Height" Value="30" />
-        <Setter Property="Foreground" Value="Blue" />
         <Setter Property="FontSize" Value="20" />
         <Setter Property="Padding" Value="10,0" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
+    </Style>
+    <Style BasedOn="{StaticResource {x:Type ComboBox}}" TargetType="{x:Type local:DropDownControl}">
+        <Setter Property="Width" Value="200" />
+        <Setter Property="Height" Value="30" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+    </Style>
+    <Style BasedOn="{StaticResource {x:Type Button}}" TargetType="{x:Type local:ButtonControl}">
+        <Setter Property="Background" Value="#322c5a" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Height" Value="20" />
+        <Setter Property="Width" Value="70" />
     </Style>
 </ResourceDictionary>

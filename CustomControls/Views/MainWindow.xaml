@@ -10,25 +10,65 @@
     Title="MainWindow"
     Width="800"
     Height="450"
+    Background="AliceBlue"
     mc:Ignorable="d">
+    <Window.Resources>
+        <Style x:Key="CustomLabelStyle" TargetType="Label">
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="FontFamily" Value="Times New Roman" />
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="FontWeight" Value="Medium" />
+        </Style>
+    </Window.Resources>
     <Window.DataContext>
         <viewModel:MainWindowViewModel />
     </Window.DataContext>
-    <Grid Background="AntiqueWhite">
+    <Grid Margin="20" Background="AntiqueWhite">
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="0">
-            <WrapPanel>
-                <Label
-                    VerticalContentAlignment="Center"
-                    Content="Enter your name: "
-                    FontFamily="Times new roman"
-                    FontSize="20"
-                    FontWeight="Medium" />
-                <local1:TextBoxControl Margin="0,20" Text="{Binding TextBox}" />
-            </WrapPanel>
-        </StackPanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <!--  Custom Textbox  -->
+            <Label
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Content="Enter your data"
+                FontSize="20"
+                FontWeight="Bold"
+                Foreground="SaddleBrown" />
+            <Label
+                Grid.Row="1"
+                Content="Name: "
+                Style="{StaticResource CustomLabelStyle}" />
+            <local1:TextBoxControl Grid.Row="1" Text="{Binding TextBox}" />
+            <Label
+                Grid.Row="2"
+                Content="Email: "
+                Style="{StaticResource CustomLabelStyle}" />
+            <local1:TextBoxControl Grid.Row="2" Text="{Binding TextBox}" />
+
+            <!--  Custom ComboBox  -->
+            <Label
+                Grid.Row="3"
+                Content="Gender"
+                Style="{StaticResource CustomLabelStyle}" />
+            <local1:DropDownControl Grid.Row="3" Text="{Binding ComboBox}">
+                <ComboBoxItem Content="Select" IsSelected="True" />
+                <ComboBoxItem Content="Male" />
+                <ComboBoxItem Content="Female" />
+                <ComboBoxItem Content="Other" />
+            </local1:DropDownControl>
+            
+            <!--Custom Button-->
+            <local1:ButtonControl Grid.Row="4" Command="{Binding DisplayCommand}" Content="Click" />
+        </Grid>
     </Grid>
 </Window>

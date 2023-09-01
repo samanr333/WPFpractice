@@ -1,4 +1,5 @@
 ﻿using CustomControls.Command;
+using System.Windows;
 using System.Windows.Input;
 
 namespace CustomControls.ViewModel
@@ -12,18 +13,13 @@ namespace CustomControls.ViewModel
         {
             DisplayCommand = new RelayCommand(Display, CanDisplay);
         }
-        public string ShowMessage()
-        {
-            mainWindow = new MainWindow();
-            return ($"Text Box: {TextBox}\n");
-        }
         public bool CanDisplay(object obj)
         {
             return true;
         }
         public void Display(object obj)
         {
-            ShowMessage();
+            MessageBox.Show("Recorded");
         }
     }
 }
