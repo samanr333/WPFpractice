@@ -44,7 +44,7 @@ namespace CustomControls.Controller
     ///     <MyNamespace:TextBlockControl/>
     ///
     /// </summary>
-    public class TextBlockControl : Control
+    public class TextBlockControl : TextBlock
     {
         static TextBlockControl()
         {

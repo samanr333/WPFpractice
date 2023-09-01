@@ -48,27 +48,32 @@
                 Grid.Row="1"
                 Content="Name: "
                 Style="{StaticResource CustomLabelStyle}" />
-            <local1:TextBoxControl Grid.Row="1" Text="{Binding TextBox}" />
+            <local1:TextBoxControl Grid.Row="1" Text="{Binding Name}" />
             <Label
                 Grid.Row="2"
                 Content="Email: "
                 Style="{StaticResource CustomLabelStyle}" />
-            <local1:TextBoxControl Grid.Row="2" Text="{Binding TextBox}" />
+            <local1:TextBoxControl Grid.Row="2" Text="{Binding Email}" />
 
             <!--  Custom ComboBox  -->
             <Label
                 Grid.Row="3"
                 Content="Gender"
                 Style="{StaticResource CustomLabelStyle}" />
-            <local1:DropDownControl Grid.Row="3" Text="{Binding ComboBox}">
+            <local1:DropDownControl Grid.Row="3" Text="{Binding Gender}">
                 <ComboBoxItem Content="Select" IsSelected="True" />
                 <ComboBoxItem Content="Male" />
                 <ComboBoxItem Content="Female" />
                 <ComboBoxItem Content="Other" />
             </local1:DropDownControl>
-            
-            <!--Custom Button-->
-            <local1:ButtonControl Grid.Row="4" Command="{Binding DisplayCommand}" Content="Click" />
+
+            <!--  Custom Button  -->
+            <local1:ButtonControl
+                Grid.Row="4"
+                Command="{Binding DisplayCommand}"
+                Content="Click" />
         </Grid>
+        <!--  TextBlock Control  -->
+        <local1:TextBlockControl  Grid.Column="1" Text="{Binding DisplayBox}"/>
     </Grid>
 </Window>
