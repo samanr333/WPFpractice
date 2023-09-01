@@ -94,5 +94,6 @@
                 Opacity="0.6"
                 SelectionMode="Multiple" />
         </StackPanel>
+        
     </Grid>
 </Window>

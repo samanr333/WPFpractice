@@ -13,5 +13,12 @@ namespace UserInterface
         {
             Close();
         }
+        public void SignUpClick(object sender, EventArgs e)
+        {
+            
+            Register register = new Register();
+            register.Show();
+            Close();
+        }
     }
 }

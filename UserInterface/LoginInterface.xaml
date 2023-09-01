@@ -5,7 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="LoginInterface"
-    Width="525"
+    Width="550"
     Height="350"
     AllowsTransparency="True"
     Background="Transparent"
@@ -127,6 +127,7 @@
                 </Button.Template>
             </Button>
             <StackPanel
+                Width="220"
                 Margin="0,15,0,0"
                 HorizontalAlignment="Center"
                 Orientation="Horizontal">
@@ -145,7 +146,41 @@
                     FontFamily="Montserrat"
                     FontSize="12"
                     FontWeight="Medium"
-                    Foreground="White" />
+                    Foreground="White">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <!--  Sign Up button  -->
+                <Button
+                    Margin="8,0,0,0"
+                    Background="#322c5a"
+                    BorderThickness="0"
+                    Click="SignUpClick"
+                    Content="Sign Up"
+                    Cursor="Hand"
+                    FontFamily="Montserrat"
+                    FontSize="10"
+                    FontWeight="Medium"
+                    Foreground="White"
+                    Opacity=".98"
+                    OpacityMask="Purple">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border
+                                Width="45"
+                                Height="15"
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="5">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
             </StackPanel>
         </StackPanel>
         <!--  For Close button  -->

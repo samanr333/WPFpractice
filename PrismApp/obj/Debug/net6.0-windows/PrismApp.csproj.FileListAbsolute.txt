@@ -24,3 +24,5 @@ C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\PrismApp\obj\D
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\PrismApp\obj\Debug\net6.0-windows\PrismApp.pdb
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\PrismApp\obj\Debug\net6.0-windows\PrismApp.genruntimeconfig.cache
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\PrismApp\obj\Debug\net6.0-windows\ref\PrismApp.dll
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\PrismApp\obj\Debug\net6.0-windows\Views\AddList.baml
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\PrismApp\obj\Debug\net6.0-windows\Views\AddList.g.cs
