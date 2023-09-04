@@ -14,7 +14,7 @@
     mc:Ignorable="d">
     <Grid>
         <Border Style="{StaticResource CustomBorderStyle}" />
-        <WrapPanel Margin="10">
+        <WrapPanel Margin="50,10,0,0">
             <Label VerticalAlignment="Center" Content="Title: " />
             <TextBox
                 x:Name="TitleBox"
@@ -40,15 +40,12 @@
         </WrapPanel>
 
         <!--  For Task Cards  -->
-        <WrapPanel
-            Width="auto"
-            Margin="50"
-            Orientation="Horizontal">
+        <WrapPanel Margin="50">
             <ItemsControl ItemsSource="{Binding TaskItems}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <Border
-                            Width="auto"
+                            Width="200"
                             Height="auto"
                             Margin="10"
                             Background="AliceBlue"
@@ -60,16 +57,19 @@
                                     <RowDefinition Height="Auto" />
                                     <RowDefinition Height="*" />
                                 </Grid.RowDefinitions>
-
                                 <TextBlock
+                                    Width="100"
                                     Margin="5"
                                     FontWeight="Medium"
                                     Foreground="Crimson"
-                                    Text="{Binding Title}" />
+                                    Text="{Binding Title}"
+                                    TextWrapping="Wrap" />
                                 <TextBlock
                                     Grid.Row="1"
                                     Margin="5"
-                                    Text="{Binding Description}" />
+                                    FontWeight="Medium"
+                                    Text="{Binding Description}"
+                                    TextWrapping="Wrap" />
                                 <Button
                                     Width="auto"
                                     Height="auto"

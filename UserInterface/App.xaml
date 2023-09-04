@@ -21,7 +21,7 @@
             <Setter Property="Background">
                 <Setter.Value>
                     <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-                        <GradientStop Offset="0" Color="Peru" />
+                        <GradientStop Offset="0" Color="LightSalmon" />
                         <GradientStop Offset="1" Color="#1B1448" />
                     </LinearGradientBrush>
                 </Setter.Value>
