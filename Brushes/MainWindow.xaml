@@ -10,8 +10,8 @@
     Height="450"
     mc:Ignorable="d">
     <Window.Resources />
-    <Grid>
-        <WrapPanel Margin="20">
+    <Grid Background="#421a5a">
+        <WrapPanel Margin="60" Background="Plum">
             <!--  For Nepal Flag  -->
             <Canvas VerticalAlignment="Center">
                 <Canvas>
@@ -72,7 +72,7 @@
                                 <Color
                                     A="255"
                                     B="20"
-                                    G="100"
+                                    G="50"
                                     R="200" />
                             </SolidColorBrush.Color>
                         </SolidColorBrush>
@@ -108,8 +108,8 @@
                         HorizontalAlignment="Left"
                         FontFamily="Times new roman"
                         FontSize="35"
-                        Foreground="Bisque"
                         FontWeight="Bold"
+                        Foreground="Bisque"
                         Text="VS" />
                 </Canvas>
 
