@@ -9,62 +9,145 @@
     Width="800"
     Height="450"
     mc:Ignorable="d">
+    <Window.Resources />
     <Grid>
         <WrapPanel Margin="20">
-            <Rectangle
-                Width="70"
-                Height="50"
-                Stroke="blue"
-                StrokeThickness="4">
-                <Rectangle.Fill>
-                    <SolidColorBrush>
-                        <SolidColorBrush.Color>
-                            <Color
-                                A="255"
-                                B="20"
-                                G="100"
-                                R="200" />
-                        </SolidColorBrush.Color>
-                    </SolidColorBrush>
-                </Rectangle.Fill>
-            </Rectangle>
-            <Canvas>
-                <Polygon
-                    Fill="Crimson"
-                    Points="35,100 150,200 10,200 10,5 150,100 35,100"
-                    Stroke="Blue"
-                    StrokeThickness="5" />
-                <!--  Moon  -->
-                <Ellipse
-                    Canvas.Left="44"
-                    Canvas.Top="53"
-                    Width="30"
-                    Height="30"
-                    Fill="WhiteSmoke"
-                    RenderTransformOrigin="0.5,0.5">
-                    <Ellipse.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform />
-                            <SkewTransform />
-                            <RotateTransform Angle="178.581" />
-                            <TranslateTransform />
-                        </TransformGroup>
-                    </Ellipse.RenderTransform>
-                    <Ellipse.Clip>
-                        <RectangleGeometry Rect="0,0,100,15" />
-                    </Ellipse.Clip>
-                </Ellipse>
-                <!--  Sun  -->
-                <Ellipse
-                    Canvas.Left="44"
-                    Canvas.Top="142"
-                    Width="35"
-                    Height="35"
-                    HorizontalAlignment="Left"
-                    VerticalAlignment="Top"
-                    Fill="WhiteSmoke"
-                    StrokeThickness="2" />
+            <!--  For Nepal Flag  -->
+            <Canvas VerticalAlignment="Center">
+                <Canvas>
+                    <Polygon
+                        Fill="Crimson"
+                        Points="35,100 150,200 10,200 10,5 150,100 35,100"
+                        Stroke="Blue"
+                        StrokeThickness="5" />
+                    <!--  Moon  -->
+                    <Ellipse
+                        Canvas.Left="44"
+                        Canvas.Top="50"
+                        Width="35"
+                        Height="30"
+                        Fill="WhiteSmoke"
+                        RenderTransformOrigin="0.5,0.5">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform />
+                                <SkewTransform />
+                                <RotateTransform Angle="180" />
+                                <TranslateTransform />
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                        <Ellipse.Clip>
+                            <RectangleGeometry Rect="0,0,100,15" />
+                        </Ellipse.Clip>
+                    </Ellipse>
+                    <Ellipse
+                        Canvas.Left="53"
+                        Canvas.Top="57"
+                        Width="15"
+                        Height="15"
+                        Fill="WhiteSmoke"
+                        RenderTransformOrigin="0.5,0.5" />
+                    <!--  Sun  -->
+                    <Ellipse
+                        Canvas.Left="44"
+                        Canvas.Top="150"
+                        Width="35"
+                        Height="35"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Fill="WhiteSmoke"
+                        StrokeThickness="2" />
+                </Canvas>
+
+                <!--  Animated Rectangle  -->
+                <Rectangle
+                    Name="MySquare"
+                    Canvas.Left="200 "
+                    Canvas.Top="70"
+                    Width="100"
+                    Height="100">
+                    <Rectangle.Fill>
+                        <SolidColorBrush>
+                            <SolidColorBrush.Color>
+                                <Color
+                                    A="255"
+                                    B="20"
+                                    G="100"
+                                    R="200" />
+                            </SolidColorBrush.Color>
+                        </SolidColorBrush>
+                    </Rectangle.Fill>
+                    <Rectangle.Triggers>
+                        <EventTrigger RoutedEvent="Rectangle.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation
+                                        AutoReverse="True"
+                                        RepeatBehavior="Forever"
+                                        Storyboard.TargetName="MySquare"
+                                        Storyboard.TargetProperty="Height"
+                                        From="100"
+                                        To="150"
+                                        Duration="0:0:2" />
+                                    <DoubleAnimation
+                                        AutoReverse="True"
+                                        RepeatBehavior="Forever"
+                                        Storyboard.TargetName="MySquare"
+                                        Storyboard.TargetProperty="Width"
+                                        From="100"
+                                        To="150"
+                                        Duration="0:0:5" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Rectangle.Triggers>
+                </Rectangle>
+                <Canvas Canvas.Left="250" Canvas.Top="100">
+                    <TextBlock
+                        x:Name="MyTextBlock"
+                        HorizontalAlignment="Left"
+                        FontFamily="Times new roman"
+                        FontSize="35"
+                        Foreground="Bisque"
+                        FontWeight="Bold"
+                        Text="VS" />
+                </Canvas>
+
+                <!--  For India Flag  -->
+                <Canvas Margin="400,40,0,0">
+                    <Rectangle
+                        Canvas.Top="0"
+                        Width="250"
+                        Height="50"
+                        Fill="Orange" />
+
+                    <Rectangle
+                        Canvas.Top="50"
+                        Width="250"
+                        Height="50"
+                        Fill="White" />
+
+                    <Rectangle
+                        Canvas.Top="100"
+                        Width="250"
+                        Height="50"
+                        Fill="Green" />
+                    <Ellipse
+                        Canvas.Left="100"
+                        Canvas.Top="50"
+                        Width="50"
+                        Height="50"
+                        Stroke="Navy"
+                        StrokeThickness="3" />
+                    <Ellipse
+                        Canvas.Left="115"
+                        Canvas.Top="65"
+                        Width="20"
+                        Height="20"
+                        Fill="Navy" />
+                </Canvas>
             </Canvas>
         </WrapPanel>
+
     </Grid>
 </Window>
