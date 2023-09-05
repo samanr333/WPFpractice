@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\UserInterface\App.xaml
-3-803732910
+4-25128248
 
-61348975675
+7622105778
 198-651932399
-LoginInterface.xaml;MainWindow.xaml;Register.xaml;
+Controls\HomeTab.xaml;LoginInterface.xaml;MainWindow.xaml;Register.xaml;
 
 False
 

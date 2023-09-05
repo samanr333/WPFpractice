@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Controls\HomeTab.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="LoginInterface.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -15,6 +18,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Controls\HomeTab.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="LoginInterface.xaml">
       <SubType>Designer</SubType>
     </Page>

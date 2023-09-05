@@ -24,3 +24,6 @@ C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\UserInterface\
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\UserInterface\obj\Debug\net7.0-windows\Register.g.cs
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\UserInterface\obj\Debug\net7.0-windows\Register.baml
 C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\UserInterface\obj\Debug\net7.0-windows\App.baml
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\UserInterface\obj\Debug\net7.0-windows\Controls\HomeTab.g.cs
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\UserInterface\obj\Debug\net7.0-windows\Controls\HomeTab.baml
+C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\UserInterface\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
