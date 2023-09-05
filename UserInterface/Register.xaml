@@ -21,13 +21,13 @@
             <Setter Property="Margin" Value="0,5,0,0" />
             <Setter Property="Padding" Value="10,0,0,0" />
             <Setter Property="VerticalAlignment" Value="Center" />
-            <Setter Property="BorderBrush" Value="DarkGray" />
+            <Setter Property="BorderBrush" Value="#BE263B" />
             <Setter Property="BorderThickness" Value="0,0,0,2" />
-            <Setter Property="CaretBrush" Value="LightGray" />
+            <Setter Property="CaretBrush" Value="White" />
             <Setter Property="FontFamily" Value="Montserrat" />
             <Setter Property="FontSize" Value="13" />
             <Setter Property="FontWeight" Value="Medium" />
-            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Foreground" Value="Black" />
         </Style>
         <!--  TextBox style  -->
         <Style x:Key="TextBoxStyle" TargetType="TextBox">
@@ -35,13 +35,13 @@
             <Setter Property="Margin" Value="0,5,0,0" />
             <Setter Property="Padding" Value="10,0,0,0" />
             <Setter Property="VerticalAlignment" Value="Center" />
-            <Setter Property="BorderBrush" Value="DarkGray" />
+            <Setter Property="BorderBrush" Value="#BE263B" />
             <Setter Property="BorderThickness" Value="0,0,0,2" />
-            <Setter Property="CaretBrush" Value="LightGray" />
+            <Setter Property="CaretBrush" Value="White" />
             <Setter Property="FontFamily" Value="Montserrat" />
             <Setter Property="FontSize" Value="13" />
             <Setter Property="FontWeight" Value="Medium" />
-            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Foreground" Value="Black" />
         </Style>
         <!--  TextBlock style  -->
         <Style x:Key="TextBlockStyle" TargetType="TextBlock">
@@ -49,7 +49,7 @@
             <Setter Property="FontFamily" Value="Montserrat" />
             <Setter Property="FontSize" Value="12" />
             <Setter Property="FontWeight" Value="Medium" />
-            <Setter Property="Foreground" Value="DarkGray" />
+            <Setter Property="Foreground" Value="#BE263B" />
         </Style>
     </Window.Resources>
     <Grid>
@@ -65,8 +65,8 @@
                 HorizontalAlignment="Center"
                 FontFamily="Montserrat"
                 FontSize="25"
-                FontWeight="Medium"
-                Foreground="White"
+                FontWeight="Bold"
+                Foreground="AliceBlue"
                 Text="Sign up" />
             <TextBlock Style="{StaticResource TextBlockStyle}" Text="Name" />
             <TextBox x:Name="RegNameBox" Style="{StaticResource TextBoxStyle}">
@@ -108,10 +108,10 @@
                 Foreground="White">
                 <Button.Style>
                     <Style TargetType="Button">
-                        <Setter Property="Background" Value="#462AD8" />
+                        <Setter Property="Background" Value="#BE263B" />
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#28AEED" />
+                                <Setter Property="Background" Value="Crimson" />
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -136,11 +136,11 @@
                     FontFamily="Montserrat"
                     FontSize="12"
                     FontWeight="Medium"
-                    Foreground="DarkGray"
+                    Foreground="#BE263B"
                     Text="Already signed up?" />
                 <Button
                     Margin="8,0,0,0"
-                    Background="#322c5a"
+                    Background="#BE263B"
                     BorderThickness="0"
                     Click="LoginClick"
                     Content="Login"
@@ -174,7 +174,7 @@
             Content="❌"
             Cursor="Hand"
             FontSize="10"
-            Foreground="PaleVioletRed"
+            Foreground="#BE263B"
             MouseDown="CloseWindow" />
     </Grid>
 </Window>

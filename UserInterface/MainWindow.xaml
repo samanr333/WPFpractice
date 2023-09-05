@@ -10,29 +10,84 @@
     Width="800"
     Height="500"
     WindowStartupLocation="CenterScreen"
-    WindowState="Maximized"
     WindowStyle="ThreeDBorderWindow"
     mc:Ignorable="d">
     <Window.Resources>
-        <DataTemplate x:Key="TabHeaderTemplate">
-            <TextBlock
-                Margin="20"
-                Background="Transparent"
-                Cursor="Hand"
-                FontFamily="Montserrat"
-                FontSize="12"
-                FontWeight="Bold"
-                Foreground="White"
-                Text="{Binding}" />
-        </DataTemplate>
+        <!--  Icon Image  -->
+        <Style x:Key="TabIconStyle" TargetType="Image">
+            <Setter Property="Width" Value="25" />
+            <Setter Property="Height" Value="25" />
+        </Style>
     </Window.Resources>
     <Grid>
         <Border Style="{StaticResource CustomBorderStyle}" />
+        <!--  Header  -->
+        <Canvas
+            Height="50"
+            Margin="5,10,0,0"
+            VerticalAlignment="Top">
+            <!--  Logo  -->
+            <Border
+                Margin="10,0,0,0"
+                Padding="5"
+                Background="AliceBlue"
+                BorderBrush="#462AD8"
+                BorderThickness="1"
+                CornerRadius="5">
+                <TextBlock
+                    FontFamily="Montserrat"
+                    FontSize="20"
+                    FontWeight="Bold"
+                    Foreground="#BE263B"
+                    Text="TK" />
+            </Border>
+            <Border
+                Canvas.Top="5"
+                Canvas.Right="10"
+                Width="100"
+                Height="30"
+                Background="AliceBlue"
+                BorderBrush="Red"
+                BorderThickness="1"
+                CornerRadius="5">
+                <WrapPanel>
+                    <Image
+                        Width="25"
+                        VerticalAlignment="Center"
+                        Source="C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\UserInterface\Assets\user.png" />
+
+                    <Button
+                        VerticalAlignment="Center"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        Cursor="Hand"
+                        FontFamily="Montserrat"
+                        FontSize="12"
+                        FontWeight="Medium"
+                        Foreground="White">
+                        <Button.Content>
+                            <Image
+                                Width="15"
+                                Margin="5,0,0,0"
+                                VerticalAlignment="Center"
+                                Source="C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\UserInterface\Assets\logout.png" />
+                        </Button.Content>
+                    </Button>
+                    <TextBlock
+                        VerticalAlignment="Center"
+                        FontFamily="Montserrat"
+                        FontSize="12"
+                        FontWeight="Medium"
+                        Text="Logout" />
+                </WrapPanel>
+            </Border>
+        </Canvas>
         <!--  Tab control  -->
         <TabControl
             Name="verticalTabControl"
             Margin="5,50,0,0"
             Background="Transparent"
+            BorderThickness="0"
             TabStripPlacement="Left">
             <TabControl.Resources>
                 <Style TargetType="TabItem">
@@ -41,9 +96,10 @@
                             <ControlTemplate TargetType="TabItem">
                                 <Border
                                     Name="Border"
+                                    Margin="5"
                                     Background="Transparent"
                                     BorderBrush="Transparent"
-                                    BorderThickness="1,1,1,0">
+                                    CornerRadius="10">
                                     <ContentPresenter
                                         HorizontalAlignment="Center"
                                         VerticalAlignment="Center"
@@ -51,10 +107,10 @@
                                 </Border>
                                 <ControlTemplate.Triggers>
                                     <Trigger Property="IsSelected" Value="True">
-                                        <Setter TargetName="Border" Property="Background" Value="Transparent" />
+                                        <Setter TargetName="Border" Property="Background" Value="#BE263B" />
                                     </Trigger>
                                     <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter TargetName="Border" Property="Background" Value="Transparent" />
+                                        <Setter TargetName="Border" Property="Background" Value="crimson" />
                                     </Trigger>
                                 </ControlTemplate.Triggers>
                             </ControlTemplate>
@@ -63,14 +119,14 @@
                 </Style>
             </TabControl.Resources>
             <TabItem
-                Background="Transparent"
-                Header="Home"
-                HeaderTemplate="{StaticResource TabHeaderTemplate}">
-                <TabItem.Content>
-                    <local1:HomeTab />
-                </TabItem.Content>
-            </TabItem>
-            <TabItem Header="Home" HeaderTemplate="{StaticResource TabHeaderTemplate}">
+                Width="50"
+                Height="50"
+                Background="Transparent" VerticalAlignment="Bottom">
+                <TabItem.Header>
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\UserInterface\Assets\home.png" Style="{StaticResource TabIconStyle}" />
+                    </StackPanel>
+                </TabItem.Header>
                 <TabItem.Content>
                     <local1:HomeTab />
                 </TabItem.Content>
