@@ -1,0 +1,24 @@
+﻿<Window
+    x:Class="passwordbox.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:passwordbox"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid>
+        <PasswordBox
+            x:Name="Pbox"
+            Width="100"
+            Height="30" />
+        
+        <Button
+            Width="50"
+            Height="20"
+            Click="Display"
+            Content="Display" Margin="375,315,375,99" />
+    </Grid>
+</Window>

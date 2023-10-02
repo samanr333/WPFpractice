@@ -121,7 +121,22 @@
             <TabItem
                 Width="50"
                 Height="50"
-                Background="Transparent" VerticalAlignment="Bottom">
+                VerticalAlignment="Bottom"
+                Background="Transparent">
+                <TabItem.Header>
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\UserInterface\Assets\home.png" Style="{StaticResource TabIconStyle}" />
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <local1:HomeTab />
+                </TabItem.Content>
+            </TabItem>
+            <TabItem
+                Width="50"
+                Height="50"
+                VerticalAlignment="Bottom"
+                Background="Transparent">
                 <TabItem.Header>
                     <StackPanel Orientation="Vertical">
                         <Image Source="C:\Users\saman\OneDrive\Desktop\Bajra Trainee\Course\.NET\WpfApp2\UserInterface\Assets\home.png" Style="{StaticResource TabIconStyle}" />

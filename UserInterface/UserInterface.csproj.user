@@ -7,20 +7,20 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Controls\HomeTab.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="LoginInterface.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Register.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Window1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Window2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Controls\HomeTab.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="LoginInterface.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -28,6 +28,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Register.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Window1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Window2.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

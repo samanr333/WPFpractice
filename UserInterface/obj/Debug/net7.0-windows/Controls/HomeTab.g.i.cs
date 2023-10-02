@@ -69,7 +69,7 @@ namespace UserInterface.Controls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UserInterface;component/controls/hometab.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/UserInterface;V1.0.0.0;component/controls/hometab.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Controls\HomeTab.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

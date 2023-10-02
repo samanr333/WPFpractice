@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrismApp", "PrismApp\PrismA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomControls", "CustomControls\CustomControls.csproj", "{2D7360B2-C986-44A5-A334-B7C0438161EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brushes", "Brushes\Brushes.csproj", "{1CC35252-66DA-4C74-B118-83C714819796}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Brushes", "Brushes\Brushes.csproj", "{1CC35252-66DA-4C74-B118-83C714819796}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
